@@ -1,0 +1,135 @@
+import React, { useState } from "react";
+import { gql, useQuery, useMutation } from "@apollo/client";
+import ApolloProvider from "./ApolloProvider";
+import "./App.css";
+
+const GET_BOOKS = gql`
+    query GetBooks {
+        books {
+            id
+            title
+            shelfNo
+        }
+    }
+`;
+
+const CREATE_BOOK = gql`
+    mutation CreateBook($title: String!, $shelfNo: String!) {
+        createBook(title: $title, shelfNo: $shelfNo) {
+            id
+            title
+            shelfNo
+        }
+    }
+`;
+
+const DELETE_BOOK = gql`
+    mutation DeleteBook($id: ID!) {
+        deleteBook(id: $id) {
+            id
+        }
+    }
+`;
+
+export function Notice() {
+    const [visible, setVisible] = useState(null);
+    const [text, setText] = useState(null);
+
+    function invalidShelfNo(){
+        setText('ShelfNo must be an Integer!')
+        setVisible(true)
+    }
+
+    function validShelfNo(){
+        setVisible(false)
+    }
+
+    if(visible)
+        return <p class="warning">{text}</p>;
+    else   
+        return
+}
+
+const App = () => {
+    const { loading, error, data, refetch } = useQuery(GET_BOOKS);
+    const [createBook] = useMutation(CREATE_BOOK);
+    const [deleteBook] = useMutation(DELETE_BOOK);
+
+    const [title, setTitle] = useState("");
+    const [shelfNo, setShelfNo] = useState("");
+    //const [publishDate, setPublishDate] = useState("");
+
+    const handleAddBook = async () => {
+        //console.log(shelfNo);
+        if(Number.isInteger(parseInt(shelfNo)))
+        {
+            validShelfNo()
+            await createBook({
+                variables: { title, shelfNo },
+            });
+            refetch();
+            setTitle("");
+            setShelfNo("");
+            //setPublishDate("");
+        } 
+        else
+        {
+            invalidShelfNo()
+        }
+    };
+
+    const handleAddBookEnter = async (e) => {
+      console.log(e.key);
+      if(e.key === "Enter")
+      {
+        handleAddBook();
+      }
+  };
+
+    const handleDeleteBook = async (id) => {
+        await deleteBook({ variables: { id } });
+        refetch();
+    };
+
+    if (loading) return <p>Loading...</p>;
+    if (error) return <p>Error: {error.message}</p>;
+
+    return (
+        <div className="container">
+            <h1>Books</h1>
+            <ul>
+                {data.books.map((book) => (
+                    <li key={book.id}>
+                        {book.title} (in shelf no.{book.shelfNo})
+                        <button onClick={() => handleDeleteBook(book.id)}>Take this book</button>
+                    </li>
+                ))}
+            </ul>
+            <h2>Add a New Book</h2>
+            <div className="form">
+                <input
+                    type="text"
+                    placeholder="Title"
+                    value={title}
+                    onChange={(e) => setTitle(e.target.value)}
+                />
+                <input
+                    type="text"
+                    placeholder="ShelfNo"
+                    value={shelfNo}
+                    onChange={(e) => setShelfNo(e.target.value)}
+                />
+                <Notice/>
+                <button onClick={handleAddBook} onKeyDown={handleAddBookEnter}>Add Book</button>
+            </div>
+        </div>
+    );
+};
+
+const WrappedApp = () => (
+    <ApolloProvider>
+        <App />
+    </ApolloProvider>
+);
+
+export default WrappedApp;
