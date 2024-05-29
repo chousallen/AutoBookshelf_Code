@@ -19,7 +19,7 @@ A simply web where you can register your books and take it out (via arduino).
 
 type following commands in the terminal:
 ```
-$ cd backend/
+$ cd backend
 $ npm start
 ```
 
@@ -40,7 +40,7 @@ then go to http://localhost:4000/
 
 type following commands in the terminal
 ```
-$ cd frontend/
+$ cd frontend
 $ npm run dev
 ```
 
