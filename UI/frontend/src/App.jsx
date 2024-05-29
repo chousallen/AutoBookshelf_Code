@@ -31,23 +31,9 @@ const DELETE_BOOK = gql`
     }
 `;
 
-export function Notice() {
-    const [visible, setVisible] = useState(null);
-    const [text, setText] = useState(null);
-
-    function invalidShelfNo(){
-        setText('ShelfNo must be an Integer!')
-        setVisible(true)
-    }
-
-    function validShelfNo(){
-        setVisible(false)
-    }
-
-    if(visible)
-        return <p class="warning">{text}</p>;
-    else   
-        return
+export function Notice({ warningVisible, warningText }) {  
+    if(warningVisible) return <p class="warning">{warningText}</p>;
+    else return;
 }
 
 const App = () => {
@@ -57,7 +43,19 @@ const App = () => {
 
     const [title, setTitle] = useState("");
     const [shelfNo, setShelfNo] = useState("");
+    const [warningText, setWarningText] = useState(null);
+    const [warningVisible, setWarningVisible] = useState(null);
     //const [publishDate, setPublishDate] = useState("");
+
+    function invalidShelfNo(){
+        setWarningText('ShelfNo must be an Integer!')
+        setWarningVisible(true)
+    }
+
+    function validShelfNo(){
+        setWarningText('')
+        setWarningVisible(false)
+    }
 
     const handleAddBook = async () => {
         //console.log(shelfNo);
@@ -119,7 +117,7 @@ const App = () => {
                     value={shelfNo}
                     onChange={(e) => setShelfNo(e.target.value)}
                 />
-                <Notice/>
+                <Notice warningVisible={warningVisible} warningText={warningText}/>
                 <button onClick={handleAddBook} onKeyDown={handleAddBookEnter}>Add Book</button>
             </div>
         </div>
