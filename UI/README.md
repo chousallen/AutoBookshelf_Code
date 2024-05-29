@@ -26,6 +26,7 @@ $ npm start
 then go to http://localhost:4000/
 
 ## Frontend
+```
 ├──node_modules
 ├──public
 ├──src
@@ -35,6 +36,7 @@ then go to http://localhost:4000/
 │  ├──App.jsx
 │  └──main.jsx
 └──index.html
+```
 
 type following commands in the terminal
 ```
