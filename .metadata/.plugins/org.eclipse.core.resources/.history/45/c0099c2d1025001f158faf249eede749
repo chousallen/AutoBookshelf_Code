@@ -1,0 +1,30 @@
+/*
+ * encoder.h
+ *
+ *  Created on: Jun 8, 2024
+ *      Author: choua
+ */
+
+#ifndef INC_ENCODER_H_
+#define INC_ENCODER_H_
+
+TIM_HandleTypeDef *htim;
+
+typedef struct
+{
+	int8_t elapse;
+}Encoder;
+
+void Encoder_Init(TIM_HandleTypeDef *_htim)
+{
+	htim = _htim;
+}
+
+void Encoder_Start(Encoder* enc)
+{
+	HAL_TIM_Base_Start_IT(enc->htim);
+	HAL_TIM_Encoder_Start_IT(enc->htim, TIM_CHANNEL_ALL);
+
+}
+
+#endif /* INC_ENCODER_H_ */
