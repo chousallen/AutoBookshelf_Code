@@ -1,7 +1,4 @@
 import argparse
-import serial
-
-BT_PORT = "COM5"
 
 def parse_args():
     parser = argparse.ArgumentParser()
@@ -9,15 +6,6 @@ def parse_args():
     return parser.parse_args()
 
 def main(message: str):
-    ser = serial.Serial(
-        port = BT_PORT,
-        baudrate = 9600
-    )
-    enter = "\n"
-    send = enter.encode("utf-8")
-    ser.write(send)
-    send = message.encode("utf-8")
-    ser.write(send)
     print(message)
 
 if __name__ == "__main__":

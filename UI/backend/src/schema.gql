@@ -2,8 +2,6 @@ type Book {
     id: ID!
     title: String!
     shelfNo: String!
-    #author: String!
-    #publishDate: String!
 }
 
 type Query {

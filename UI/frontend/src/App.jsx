@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { gql, useQuery, useMutation } from "@apollo/client";
 import ApolloProvider from "./ApolloProvider";
 import "./App.css";
@@ -43,36 +43,82 @@ const App = () => {
 
     const [title, setTitle] = useState("");
     const [shelfNo, setShelfNo] = useState("");
-    const [warningText, setWarningText] = useState(null);
-    const [warningVisible, setWarningVisible] = useState(null);
+    const [warningText, setWarningText] = useState(Array(2).fill(""));
+    const [warningVisible, setWarningVisible] = useState(Array(2).fill(false));
     //const [publishDate, setPublishDate] = useState("");
 
     function invalidShelfNo(){
-        setWarningText('ShelfNo must be an Integer!')
-        setWarningVisible(true)
+        const nextWarningText = warningText.slice();
+        nextWarningText[1] = "ShelfNo must be an Valid Integer!";
+        setWarningText(nextWarningText);
+        const nextWarningVisible = warningVisible.slice();
+        nextWarningVisible[1] = true;
+        setWarningVisible(nextWarningVisible);
     }
 
     function validShelfNo(){
-        setWarningText('')
-        setWarningVisible(false)
+        const nextWarningText = warningText.slice();
+        nextWarningText[1] = "";
+        setWarningText(nextWarningText);
+        const nextWarningVisible = warningVisible.slice();
+        nextWarningVisible[1] = false;
+        setWarningVisible(nextWarningVisible);
     }
+
+    /*
+    function noBook(){
+        const nextWarningText = warningText.slice();
+        nextWarningText[0] = "There's no book right now. Add one!";
+        setWarningText(nextWarningText);
+        const nextWarningVisible = warningVisible.slice();
+        nextWarningVisible[0] = true;
+        setWarningVisible(nextWarningVisible);
+    }
+
+    function haveBook(){
+        const nextWarningText = warningText.slice();
+        nextWarningText[0] = "";
+        setWarningText(nextWarningText);
+        const nextWarningVisible = warningVisible.slice();
+        nextWarningVisible[0] = false;
+        setWarningVisible(nextWarningVisible);
+    }
+
+    function findBooks(){
+        if(parseInt(data.books.length) === 0)
+        {
+            noBook();
+        }
+        else
+        {
+            haveBook();
+        }
+    }
+    */
 
     const handleAddBook = async () => {
         //console.log(shelfNo);
         if(Number.isInteger(parseInt(shelfNo)))
         {
-            validShelfNo()
-            await createBook({
-                variables: { title, shelfNo },
-            });
-            refetch();
-            setTitle("");
-            setShelfNo("");
-            //setPublishDate("");
+            if(parseInt(shelfNo) <= 6 && parseInt(shelfNo) > 0)
+            {
+                await createBook({
+                    variables: { title, shelfNo },
+                });
+                setTitle("");
+                setShelfNo("");
+                refetch();
+                //findBooks();
+                validShelfNo();
+            }
+            else
+            {
+                invalidShelfNo();
+            }
         } 
         else
         {
-            invalidShelfNo()
+            invalidShelfNo();
         }
     };
 
@@ -86,7 +132,14 @@ const App = () => {
 
     const handleDeleteBook = async (id) => {
         await deleteBook({ variables: { id } });
+        //findBooks();
         refetch();
+        const nextWarningText = warningText.slice();
+        nextWarningText[1] = "Shelf is moving!";
+        setWarningText(nextWarningText);
+        const nextWarningVisible = warningVisible.slice();
+        nextWarningVisible[1] = true;
+        setWarningVisible(nextWarningVisible);;
     };
 
     if (loading) return <p>Loading...</p>;
@@ -94,20 +147,22 @@ const App = () => {
 
     return (
         <div className="container">
-            <h1>Books</h1>
+            <h1>Auto Shelf</h1>
+            <h2>Current Status</h2>
+            <Notice warningVisible={warningVisible[0]} warningText={warningText[0]}/>
             <ul>
                 {data.books.map((book) => (
                     <li key={book.id}>
                         {book.title} (in shelf no.{book.shelfNo})
-                        <button onClick={() => handleDeleteBook(book.id)}>Take this book</button>
+                        <button onClick={() => handleDeleteBook(book.id)}>Take this stuff</button>
                     </li>
                 ))}
             </ul>
-            <h2>Add a New Book</h2>
+            <h2>Add New Stuff</h2>
             <div className="form">
                 <input
                     type="text"
-                    placeholder="Title"
+                    placeholder="Stuff"
                     value={title}
                     onChange={(e) => setTitle(e.target.value)}
                 />
@@ -117,8 +172,8 @@ const App = () => {
                     value={shelfNo}
                     onChange={(e) => setShelfNo(e.target.value)}
                 />
-                <Notice warningVisible={warningVisible} warningText={warningText}/>
-                <button onClick={handleAddBook} onKeyDown={handleAddBookEnter}>Add Book</button>
+                <Notice warningVisible={warningVisible[1]} warningText={warningText[1]}/>
+                <button onClick={handleAddBook} onKeyDown={handleAddBookEnter}>Add Stuff</button>
             </div>
         </div>
     );
