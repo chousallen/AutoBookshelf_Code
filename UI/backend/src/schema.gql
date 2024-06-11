@@ -11,4 +11,5 @@ type Query {
 type Mutation {
     createBook(title: String!, shelfNo: String!): Book!
     deleteBook(id: ID!): Book!
+    kill(id: ID!): Book!
 }

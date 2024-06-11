@@ -35,7 +35,7 @@ export const Mutation = {
         {
             const book = books[bookIndex];
             //const command = `python ./src/py/main.py --message "${book.shelfNo}"`;
-            const command = `python ./src/py/main.py --message "#s00${book.shelfNo - 1}aaaaaaaaaa"`;
+            const command = `python ./src/py/test_main.py --message "#s00${book.shelfNo - 1}aaaaaaaaaa"`;
             //console.log(`python ./src/py/main.py --message "${book.shelfNo}"`);
             try {
                 const { stdout, stderr } = await execPromise(command);
@@ -52,5 +52,23 @@ export const Mutation = {
         const [deletedBook] = books.splice(bookIndex, 1);
         saveBooks(lastId);
         return deletedBook;
+    },
+    kill: async (_, { id }) => {
+        const bookIndex = books.findIndex((book) => book.id === parseInt(id));
+        //const command = `python ./src/py/main.py --message "${book.shelfNo}"`;
+        const command = `python ./src/py/test_main.py --message "#s009aaaaaaaaaa"`;
+        //console.log(`python ./src/py/main.py --message "${book.shelfNo}"`);
+        try {
+            const { stdout, stderr } = await execPromise(command);
+            if (stderr) {
+                console.error(`Stderr: ${stderr}`);
+                throw new Error(`Error: ${stderr}`);
+            }
+            console.log(`Stdout: ${stdout}`);
+        } catch (error) {
+            console.error(`Error: ${error.message}`);
+            throw new Error(`Error: ${error.message}`);
+        }
+        return books[bookIndex];
     }
 };

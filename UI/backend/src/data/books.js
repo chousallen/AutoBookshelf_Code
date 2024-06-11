@@ -1,4 +1,4 @@
-export let lastId = 4
+export let lastId = 5
 export let books = [
   {
     "id": 1,
@@ -19,5 +19,10 @@ export let books = [
     "id": 4,
     "title": "rose",
     "shelfNo": "4"
+  },
+  {
+    "id": 5,
+    "title": "hello",
+    "shelfNo": "5"
   }
 ];
