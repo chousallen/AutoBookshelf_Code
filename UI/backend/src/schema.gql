@@ -2,8 +2,6 @@ type Book {
     id: ID!
     title: String!
     shelfNo: String!
-    #author: String!
-    #publishDate: String!
 }
 
 type Query {
@@ -13,4 +11,5 @@ type Query {
 type Mutation {
     createBook(title: String!, shelfNo: String!): Book!
     deleteBook(id: ID!): Book!
+    kill(id: ID!): Book!
 }

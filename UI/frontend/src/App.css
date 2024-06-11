@@ -78,3 +78,45 @@ button:hover {
   text-align: center;
   color: #ff0000;
 }
+
+.information button {
+  background-color: #8b8b8b;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.information button:hover {
+  background-color: #8b8b8b;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+  margin: auto;
+}
+
+.danger {
+  margin: auto;
+  display: flex;
+  text-align: center;
+  font-size: 40px;
+  background-color: #ff0000;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.secret button{
+  background-color: #ffffff;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
