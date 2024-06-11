@@ -1,0 +1,72 @@
+/*
+ * stepper.h
+ *
+ *  Created on: Jun 10, 2024
+ *      Author: choua
+ */
+
+#ifndef INC_STEPPER_H_
+#define INC_STEPPER_H_
+
+TIM_HandleTypeDef *htim;
+uint32_t channel;
+uint16_t interval;
+uint32_t steps_remain;
+
+extern uint16_t rotateCplt;
+
+void Stepper_Rotate_Cplt_CB()
+{}
+
+void Stepper_Config(TIM_HandleTypeDef *_htim, uint32_t _channel, uint16_t _interval)
+{
+	htim = _htim;
+	channel = _channel;
+	interval = _interval;
+	__HAL_TIM_SET_AUTORELOAD(htim, interval);
+	steps_remain = 0;
+}
+
+uint8_t Stepper_Set_Interval(uint16_t _interval)
+{
+	if(_interval < 200)
+	{
+		return 0;
+	}
+	interval = _interval;
+	__HAL_TIM_SET_AUTORELOAD(htim, interval);
+	return 1;
+}
+
+uint8_t Stepper_Rotate(uint32_t steps)
+{
+	if(steps_remain != 0 || steps <= 0)
+	{
+		return 0;
+	}
+
+	steps_remain = steps;
+	HAL_TIM_Base_Start_IT(htim);
+	HAL_TIM_PWM_Start(htim, channel);
+	return 1;
+}
+
+void Stepper_Stop()
+{
+	HAL_TIM_Base_Stop_IT(htim);
+	HAL_TIM_PWM_Stop(htim, channel);
+	Stepper_Rotate_Cplt_CB();
+}
+
+void Stepper_Step_Cplt()
+{
+	if(steps_remain == 0)
+	{
+		Stepper_Stop();
+	}
+	else
+	{
+		steps_remain--;
+	}
+}
+#endif /* INC_STEPPER_H_ */

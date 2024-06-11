@@ -1,0 +1,93 @@
+/*
+ * stepper.h
+ *
+ *  Created on: Jun 10, 2024
+ *      Author: choua
+ */
+
+#ifndef INC_STEPPER_H_
+#define INC_STEPPER_H_
+
+int check, check1;
+
+TIM_HandleTypeDef *htim;
+uint32_t channel;
+uint16_t interval;
+uint32_t steps_remain;
+GPIO_TypeDef* Dir_Port;
+uint16_t Dir_Pin;
+
+void Stepper_Rotate_Cplt_CB();
+
+void Stepper_Config(TIM_HandleTypeDef *_htim, uint32_t _channel, uint16_t _interval, GPIO_TypeDef* _Dir_Port, uint16_t _Dir_Pin)
+{
+	htim = _htim;
+	channel = _channel;
+	interval = _interval;
+	__HAL_TIM_SET_AUTORELOAD(htim, interval);
+	Dir_Port = _Dir_Port;
+	Dir_Pin = _Dir_Pin;
+	steps_remain = 0;
+}
+
+uint8_t Stepper_Set_Interval(uint16_t _interval)
+{
+	if(_interval < 200)
+	{
+		return 0;
+	}
+	interval = _interval;
+	__HAL_TIM_SET_AUTORELOAD(htim, interval);
+	return 1;
+}
+
+uint8_t Stepper_Rotate(int32_t steps)
+{
+	if(steps_remain != 0 || steps == 0)
+	{
+		return 0;
+	}
+	if(steps < 0)
+	{
+		steps_remain = (-steps) - 1;
+		HAL_GPIO_WritePin(GPIOF, GPIO_PIN_13, RESET);
+		//HAL_GPIO_WritePin(Dir_Port, Dir_Pin, RESET);
+		check1 = 100;
+	}
+	else
+	{
+		steps_remain = steps - 1;
+		HAL_GPIO_WritePin(GPIOF, GPIO_PIN_13, SET);
+		//HAL_GPIO_WritePin(Dir_Port, Dir_Pin, SET);
+		check1 = 50;
+	}
+	check = HAL_GPIO_ReadPin(Dir_Port, Dir_Pin);
+	HAL_TIM_Base_Start_IT(htim);
+	HAL_TIM_PWM_Start(htim, channel);
+	return 1;
+}
+
+void Stepper_Stop()
+{
+	HAL_TIM_Base_Stop_IT(htim);
+	HAL_TIM_PWM_Stop(htim, channel);
+	Stepper_Rotate_Cplt_CB();
+}
+
+void Stepper_Step_Cplt()
+{
+	if(steps_remain == 0)
+	{
+		Stepper_Stop();
+	}
+	else
+	{
+		steps_remain--;
+	}
+}
+
+uint8_t Stepper_Cplt()
+{
+	return steps_remain<=0;
+}
+#endif /* INC_STEPPER_H_ */

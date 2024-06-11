@@ -1,0 +1,765 @@
+2024-06-10 13:03:50,597 [INFO] MainUpdater:2873 - connection check result : 10
+2024-06-10 13:03:50,651 [INFO] MainUpdater:2873 - connection check result : 10
+2024-06-10 13:03:50,893 [INFO] MicroXplorer:468 - Change Database Path : 
+2024-06-10 13:03:50,894 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.100
+2024-06-10 13:03:50,914 [ERROR] ProjectManagerView:394 - 
+java.lang.NullPointerException: Cannot invoke "javax.swing.JTextField.getText()" because the return value of "java.util.List.get(int)" is null
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectChoiceTab$10.caretUpdate(ProjectChoiceTab.java:2493) ~[filemanager.jar:?]
+	at javax.swing.text.JTextComponent.fireCaretUpdate(JTextComponent.java:412) ~[?:?]
+	at javax.swing.text.JTextComponent$MutableCaretEvent.fire(JTextComponent.java:4491) ~[?:?]
+	at javax.swing.text.JTextComponent$MutableCaretEvent.stateChanged(JTextComponent.java:4513) ~[?:?]
+	at javax.swing.text.DefaultCaret.fireStateChanged(DefaultCaret.java:842) ~[?:?]
+	at javax.swing.text.DefaultCaret.changeCaretPosition(DefaultCaret.java:1313) ~[?:?]
+	at javax.swing.text.DefaultCaret.handleSetDot(DefaultCaret.java:1212) ~[?:?]
+	at javax.swing.text.DefaultCaret.setDot(DefaultCaret.java:1193) ~[?:?]
+	at javax.swing.text.DefaultCaret$Handler.insertUpdate(DefaultCaret.java:1789) ~[?:?]
+	at javax.swing.text.AbstractDocument.fireInsertUpdate(AbstractDocument.java:226) ~[?:?]
+	at javax.swing.text.AbstractDocument.handleInsertString(AbstractDocument.java:780) ~[?:?]
+	at javax.swing.text.AbstractDocument.insertString(AbstractDocument.java:739) ~[?:?]
+	at javax.swing.text.PlainDocument.insertString(PlainDocument.java:131) ~[?:?]
+	at javax.swing.text.AbstractDocument.replace(AbstractDocument.java:698) ~[?:?]
+	at javax.swing.text.JTextComponent.setText(JTextComponent.java:1729) ~[?:?]
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectChoiceTab.createHeapStackFields(ProjectChoiceTab.java:933) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectChoiceTab.buildLinkSettingsPanel(ProjectChoiceTab.java:3426) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectChoiceTab.defineWindowsFields(ProjectChoiceTab.java:1813) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectChoiceTab.updateSettings(ProjectChoiceTab.java:533) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectSettingsPanel.UpdateDialog(ProjectSettingsPanel.java:244) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.projectmanager.ProjectManagerView.propertyChange(ProjectManagerView.java:391) ~[filemanager.jar:?]
+	at java.beans.PropertyChangeSupport.fire(PropertyChangeSupport.java:343) ~[?:?]
+	at java.beans.PropertyChangeSupport.firePropertyChange(PropertyChangeSupport.java:335) ~[?:?]
+	at java.beans.PropertyChangeSupport.firePropertyChange(PropertyChangeSupport.java:268) ~[?:?]
+	at com.st.microxplorer.util.MXPropertyChangeSupport.firePropertyChange(MXPropertyChangeSupport.java:54) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.mxsystem.MxSystem.closeConfig(MxSystem.java:900) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.maingui.MainPanel.closeConfig(MainPanel.java:776) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.plugins.filemanager.engine.OpenFileManager.loadConfigurationFile(OpenFileManager.java:245) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.filemanager.engine.MainFileManager.userLoadConfig(MainFileManager.java:290) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.filemanager.FileManagerView.getSpecificTask(FileManagerView.java:247) ~[filemanager.jar:?]
+	at com.st.stm32cube.common.mx.editor.CubeMxEditor.getMxTabbedPaneInstance(CubeMxEditor.java:1184) ~[com.st.stm32cube.common.mx_6.10.0.202311202037/:?]
+	at com.st.stm32cube.common.mx.editor.CubeMxEditor$12$1.createSwingComponent(CubeMxEditor.java:1065) ~[com.st.stm32cube.common.mx_6.10.0.202311202037/:?]
+	at com.st.stm32cube.common.mx.oss.core.awtswtbridge.EmbeddedSwingComposite.doComponentCreation(EmbeddedSwingComposite.java:492) ~[com.st.stm32cube.common.mx.oss_6.10.0.202311202037/:?]
+	at com.st.stm32cube.common.mx.oss.core.awtswtbridge.EmbeddedSwingComposite$4.run(EmbeddedSwingComposite.java:291) ~[com.st.stm32cube.common.mx.oss_6.10.0.202311202037/:?]
+	at com.st.stm32cube.common.mx.oss.core.awtswtbridge.AwtEnvironment$2.run(AwtEnvironment.java:166) ~[com.st.stm32cube.common.mx.oss_6.10.0.202311202037/:?]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318) ~[?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:720) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:714) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:399) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86) ~[?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:742) ~[?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) ~[?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) ~[?:?]
+2024-06-10 13:03:50,916 [WARN] ThirdParty:871 - waiting for thirdparty lock release [close project]
+2024-06-10 13:03:50,916 [INFO] ThirdParty:873 - entering critical section [close project]
+2024-06-10 13:03:50,916 [INFO] ThirdParty:883 - exiting critical section [close project]
+2024-06-10 13:03:50,919 [INFO] PinOutPanel:1499 - setPackage(No Configuration,No Configuration)
+2024-06-10 13:03:50,926 [WARN] IpParametersView:151 - Warning: This peripheral hasn't parameters
+2024-06-10 13:03:50,932 [WARN] MainPanel:272 - <html><b><center>Warning: This peripheral has no parameters to be configured<br></b></html>
+2024-06-10 13:03:50,934 [INFO] UtilMem:75 - Begin LoadConfig() Used Memory: 927112184 Bytes (1073741824)
+2024-06-10 13:03:50,936 [INFO] MicroXplorer:468 - Change Database Path : 
+2024-06-10 13:03:50,936 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.100
+2024-06-10 13:03:50,936 [INFO] OpenFileManager:312 - Change cursor
+2024-06-10 13:03:50,958 [INFO] RulesReader:64 - Compatibility file has been processed (297 Rules)
+2024-06-10 13:03:50,969 [INFO] Mcu:2016 - Initializing MCU STM32F429ZITx STM32F429ZITx STM32F429ZIT6
+2024-06-10 13:03:53,043 [INFO] Context:659 - Trying to add GPIOservice into a context  which must be forbidden
+2024-06-10 13:03:53,264 [INFO] RtosManager:555 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2024-06-10 13:03:53,264 [INFO] RtosManager:555 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2024-06-10 13:03:53,264 [INFO] RtosManager:555 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2024-06-10 13:03:53,264 [INFO] RtosManager:555 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2024-06-10 13:03:53,264 [WARN] ModelIntegratedComponent:184 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2024-06-10 13:03:53,268 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-06-10 13:03:53,268 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-06-10 13:03:53,268 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-06-10 13:03:53,268 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-06-10 13:03:53,268 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-06-10 13:03:53,268 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-06-10 13:03:53,268 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-06-10 13:03:53,268 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-06-10 13:03:53,268 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-06-10 13:03:53,268 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-06-10 13:03:53,268 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-06-10 13:03:53,268 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-06-10 13:03:53,268 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-06-10 13:03:53,268 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-06-10 13:03:53,268 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-06-10 13:03:53,268 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-06-10 13:03:53,268 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-06-10 13:03:53,268 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-06-10 13:03:53,268 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-06-10 13:03:53,268 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-06-10 13:03:53,268 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-06-10 13:03:53,268 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-06-10 13:03:53,268 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-06-10 13:03:53,268 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-06-10 13:03:53,268 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-06-10 13:03:53,268 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-06-10 13:03:53,268 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-06-10 13:03:53,268 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-06-10 13:03:53,268 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-06-10 13:03:53,268 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-06-10 13:03:53,268 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-06-10 13:03:53,268 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-06-10 13:03:53,268 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-06-10 13:03:53,323 [INFO] ThirdPartyModel:298 - Start build external matchings
+2024-06-10 13:03:53,436 [INFO] ThirdPartyModel:316 - End build external matchings
+2024-06-10 13:03:53,442 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (ETH) : Invalid parameter (PHY_Name)
+2024-06-10 13:03:53,442 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (ETH) : Invalid parameter (PHY_Value)
+2024-06-10 13:03:53,442 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (ETH) : Invalid parameter (PhyAddress)
+2024-06-10 13:03:53,443 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (ADC12outputFreq_Value)
+2024-06-10 13:03:53,443 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (ADC34outputFreq_Value)
+2024-06-10 13:03:53,443 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2024-06-10 13:03:53,443 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (I2C1Freq_Value)
+2024-06-10 13:03:53,443 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (I2C2Freq_Value)
+2024-06-10 13:03:53,443 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (I2C3Freq_Value)
+2024-06-10 13:03:53,443 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Parameter (MCO2PinFreq_Value) has invalid value (168000000)
+2024-06-10 13:03:53,443 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (MCOFreq_Value)
+2024-06-10 13:03:53,444 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (PLLMCOFreq_Value)
+2024-06-10 13:03:53,444 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (PLLMUL)
+2024-06-10 13:03:53,444 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (PRESCALERUSB)
+2024-06-10 13:03:53,444 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Parameter (RTCHSEDivFreq_Value) has invalid value (4000000)
+2024-06-10 13:03:53,444 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (SYSCLKSourceVirtual)
+2024-06-10 13:03:53,444 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM15Freq_Value)
+2024-06-10 13:03:53,444 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM16Freq_Value)
+2024-06-10 13:03:53,444 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM17Freq_Value)
+2024-06-10 13:03:53,444 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM1Freq_Value)
+2024-06-10 13:03:53,444 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM20Freq_Value)
+2024-06-10 13:03:53,444 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM2Freq_Value)
+2024-06-10 13:03:53,444 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM3Freq_Value)
+2024-06-10 13:03:53,444 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM8Freq_Value)
+2024-06-10 13:03:53,444 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (UART4Freq_Value)
+2024-06-10 13:03:53,444 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (UART5Freq_Value)
+2024-06-10 13:03:53,444 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (USART1Freq_Value)
+2024-06-10 13:03:53,444 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (USART2Freq_Value)
+2024-06-10 13:03:53,444 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (USART3Freq_Value)
+2024-06-10 13:03:53,444 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (USBFreq_Value)
+2024-06-10 13:03:53,444 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (VCOOutput2Freq_Value)
+2024-06-10 13:03:53,868 [INFO] UtilMem:75 - End LoadConfig() Used Memory: 894210208 Bytes (1073741824)
+2024-06-10 13:03:53,951 [INFO] MicroXplorer:468 - Change Database Path : 
+2024-06-10 13:03:53,951 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.100
+2024-06-10 13:03:53,953 [WARN] ThirdParty:833 - waiting for thirdparty lock release [change project]
+2024-06-10 13:03:53,953 [INFO] ThirdParty:835 - entering critical section [change project]
+2024-06-10 13:03:53,953 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USBPD 4.1
+2024-06-10 13:03:53,953 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 6.0.0
+2024-06-10 13:03:53,953 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2024-06-10 13:03:53,980 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F4 1.1.0
+2024-06-10 13:03:53,980 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics LIBJPEG 8.0.0
+2024-06-10 13:03:53,980 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SMBUS 2.1.0
+2024-06-10 13:03:53,980 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2024-06-10 13:03:53,980 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-FREERTOS 1.2.0
+2024-06-10 13:03:53,980 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WB 2.0.0
+2024-06-10 13:03:53,980 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F7 1.1.0
+2024-06-10 13:03:53,980 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L5 2.0.0
+2024-06-10 13:03:53,980 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2024-06-10 13:03:53,980 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.3.0
+2024-06-10 13:03:53,980 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2024-06-10 13:03:53,980 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G0 1.1.0
+2024-06-10 13:03:53,980 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 3.0.0
+2024-06-10 13:03:53,980 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 5.0.0
+2024-06-10 13:03:53,980 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics STM32_WPAN 1.0.0
+2024-06-10 13:03:53,980 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2024-06-10 13:03:53,981 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-FLIGHT1 5.0.2
+2024-06-10 13:03:53,981 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :Cesanta I-CUBE-Mongoose 7.13.0
+2024-06-10 13:03:53,981 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2024-06-10 13:03:53,981 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G4 2.0.0
+2024-06-10 13:03:53,981 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2024-06-10 13:03:53,981 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2024-06-10 13:03:53,981 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 3.0.0
+2024-06-10 13:03:53,981 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 7.0.0
+2024-06-10 13:03:53,981 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-SIGFOX1 3.2.0
+2024-06-10 13:03:53,981 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2024-06-10 13:03:53,981 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2024-06-10 13:03:53,981 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALS 1.0.2
+2024-06-10 13:03:53,981 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :emotas I-CUBE-CANOPEN 1.3.0
+2024-06-10 13:03:53,981 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 10.0.0
+2024-06-10 13:03:53,981 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-FREERTOS 1.1.0
+2024-06-10 13:03:53,981 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC7 1.0.1
+2024-06-10 13:03:53,981 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2024-06-10 13:03:53,981 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :ITTIA_DB I-CUBE-ITTIADB 8.9.0
+2024-06-10 13:03:53,981 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :portGmbH I-Cube-SoM-uGOAL 1.1.0
+2024-06-10 13:03:53,981 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALS 1.0.1
+2024-06-10 13:03:53,981 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 1.0.0
+2024-06-10 13:03:53,981 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-SMARTAG2 1.2.0
+2024-06-10 13:03:53,981 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WL 2.0.0
+2024-06-10 13:03:53,981 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :SEGGER I-CUBE-embOS 1.3.1
+2024-06-10 13:03:53,981 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.4.0
+2024-06-10 13:03:53,981 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2024-06-10 13:03:53,981 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfMQTT 1.19.0
+2024-06-10 13:03:53,981 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L4 2.0.0
+2024-06-10 13:03:53,981 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 0.0.2
+2024-06-10 13:03:53,981 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :WES I-CUBE-Cesium 1.3.0
+2024-06-10 13:03:53,982 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-ASTRA1 2.0.0
+2024-06-10 13:03:53,982 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2024-06-10 13:03:53,982 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 4.0.0
+2024-06-10 13:03:53,982 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.3.0
+2024-06-10 13:03:53,982 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :Infineon AIROC-Wi-Fi-Bluetooth-STM32 1.6.0
+2024-06-10 13:03:53,982 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2024-06-10 13:03:53,982 [INFO] ThirdParty:841 - exiting critical section [change project]
+2024-06-10 13:03:54,234 [INFO] PinOutPanel:1499 - setPackage(No Configuration,No Configuration)
+2024-06-10 13:03:54,236 [INFO] PinOutPanel:1499 - setPackage(STM32F429ZITx,LQFP144)
+2024-06-10 13:03:54,444 [INFO] UtilMem:75 - Before build in PCC Used Memory: 881595448 Bytes (1073741824)
+2024-06-10 13:03:54,637 [INFO] UtilMem:75 - After build in PCC Used Memory: 928255032 Bytes (1073741824)
+2024-06-10 13:03:54,651 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,651 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,651 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,652 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,652 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,652 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,652 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,652 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,652 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,652 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,652 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,652 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,652 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,652 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,652 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,652 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,652 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,652 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,652 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,652 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,652 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,652 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,652 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,653 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,653 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,653 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,653 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,653 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,653 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,653 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,653 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,653 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,653 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,653 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,653 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,654 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,654 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,654 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,654 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,654 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,654 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,654 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,654 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,654 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,654 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,655 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,655 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,655 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,655 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,655 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,655 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,655 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,656 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,656 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,656 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,656 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,656 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,656 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,656 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,657 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,657 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,657 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,665 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,665 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,666 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,667 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-06-10 13:03:54,680 [INFO] ApiDbMcu:508 - Load IP Config File for PDM2PCM
+2024-06-10 13:03:54,752 [INFO] CADModel:165 - CPN selected for project levelSTM32F429ZIT6
+2024-06-10 13:03:54,752 [INFO] CADModel:114 - Register for checkConnection events
+2024-06-10 13:03:54,871 [INFO] OpenFileManager:343 - Restore cursor
+2024-06-10 13:08:44,560 [INFO] Gpio:277 - dependency for GPIO [ETH, RCC, SYS, TIM3, USART3, USB_OTG_FS]
+2024-06-10 13:09:56,242 [INFO] Gpio:277 - dependency for GPIO [ETH, RCC, SYS, TIM3, USART3, USB_OTG_FS]
+2024-06-10 13:35:54,090 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,620x232,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-06-10 14:25:02,913 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 888757728 Bytes (1073741824)
+2024-06-10 14:25:03,088 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 912874976 Bytes (1073741824)
+2024-06-10 14:25:04,029 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 749024000 Bytes (1073741824)
+2024-06-10 14:25:04,340 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7
+2024-06-10 14:25:04,340 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2024-06-10 14:25:04,341 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-06-10 14:25:04,341 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-06-10 14:25:04,341 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USB_OTG_FS
+2024-06-10 14:25:04,341 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-06-10 14:25:04,341 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-06-10 14:25:04,341 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-06-10 14:25:04,342 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2024-06-10 14:25:04,343 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2024-06-10 14:25:04,696 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\license.tmp_save
+2024-06-10 14:25:04,869 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\license.tmp
+2024-06-10 14:25:04,927 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\gpio.tmp_save
+2024-06-10 14:25:05,038 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\gpio.tmp
+2024-06-10 14:25:05,314 [WARN] IPConfigManager:2946 - Warning: the RefConfig PWREx_EnableUSBVoltageDetector is not available in your config.xml file
+2024-06-10 14:25:05,352 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_it.c_save
+2024-06-10 14:25:05,534 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_it.c
+2024-06-10 14:25:05,567 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_it.h_save
+2024-06-10 14:25:05,697 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_it.h
+2024-06-10 14:25:05,745 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_hal_msp.c_save
+2024-06-10 14:25:06,008 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_hal_msp.c
+2024-06-10 14:25:06,036 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\system.tmp_save
+2024-06-10 14:25:06,107 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\system.tmp
+2024-06-10 14:25:06,142 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-06-10 14:25:06,266 [INFO] CodeEngine:335 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_hal_conf.h
+2024-06-10 14:25:06,294 [WARN] IPConfigManager:3440 - IP not found : TIM
+2024-06-10 14:25:06,294 [WARN] IPConfigManager:3440 - IP not found : USB_OTG
+2024-06-10 14:25:06,296 [WARN] CodeGenerator:3939 - IP not found : null
+2024-06-10 14:25:06,296 [WARN] CodeGenerator:3939 - IP not found : null
+2024-06-10 14:25:06,326 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\main.h_save
+2024-06-10 14:25:06,420 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\main.h
+2024-06-10 14:25:06,452 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\main.c_save
+2024-06-10 14:25:06,599 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\main.c
+2024-06-10 14:25:07,419 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 302mS.
+2024-06-10 14:25:07,422 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2024-06-10 14:25:07,632 [INFO] ConfigFileManager:1495 - The Die is : DIE419
+2024-06-10 14:25:07,648 [INFO] ApiDbMcu:508 - Load IP Config File for FATFS
+2024-06-10 14:25:07,668 [INFO] ApiDbMcu:508 - Load IP Config File for FREERTOS
+2024-06-10 14:25:07,685 [INFO] ApiDbMcu:508 - Load IP Config File for LIBJPEG
+2024-06-10 14:25:07,708 [INFO] ApiDbMcu:508 - Load IP Config File for LWIP
+2024-06-10 14:25:07,730 [INFO] ApiDbMcu:508 - Load IP Config File for MBEDTLS
+2024-06-10 14:25:07,750 [INFO] ApiDbMcu:508 - Load IP Config File for USB_DEVICE
+2024-06-10 14:25:07,767 [INFO] ApiDbMcu:508 - Load IP Config File for USB_HOST
+2024-06-10 14:25:09,153 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 1731mS.
+2024-06-10 14:25:09,153 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2024-06-10 14:25:09,156 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2024-06-10 15:00:12,278 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-06-10 15:00:35,051 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-06-10 15:09:06,281 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-06-10 15:09:10,112 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-06-10 15:09:12,459 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-06-10 15:11:43,658 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-06-10 15:13:01,359 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 870552576 Bytes (1073741824)
+2024-06-10 15:13:01,482 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 894143488 Bytes (1073741824)
+2024-06-10 15:13:02,217 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 788269392 Bytes (1073741824)
+2024-06-10 15:13:02,502 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2024-06-10 15:13:02,502 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2024-06-10 15:13:02,502 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-06-10 15:13:02,502 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-06-10 15:13:02,502 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USB_OTG_FS
+2024-06-10 15:13:02,502 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-06-10 15:13:02,502 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-06-10 15:13:02,503 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-06-10 15:13:02,503 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2024-06-10 15:13:02,504 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2024-06-10 15:13:02,759 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\license.tmp_save
+2024-06-10 15:13:02,921 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\license.tmp
+2024-06-10 15:13:02,942 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\gpio.tmp_save
+2024-06-10 15:13:03,037 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\gpio.tmp
+2024-06-10 15:13:03,183 [WARN] IPConfigManager:2946 - Warning: the RefConfig PWREx_EnableUSBVoltageDetector is not available in your config.xml file
+2024-06-10 15:13:03,212 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_it.c_save
+2024-06-10 15:13:03,394 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_it.c
+2024-06-10 15:13:03,404 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_it.h_save
+2024-06-10 15:13:03,509 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_it.h
+2024-06-10 15:13:03,541 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_hal_msp.c_save
+2024-06-10 15:13:03,770 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_hal_msp.c
+2024-06-10 15:13:03,785 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\system.tmp_save
+2024-06-10 15:13:03,867 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\system.tmp
+2024-06-10 15:13:03,889 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-06-10 15:13:04,006 [INFO] CodeEngine:335 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_hal_conf.h
+2024-06-10 15:13:04,045 [WARN] IPConfigManager:3440 - IP not found : TIM
+2024-06-10 15:13:04,045 [WARN] IPConfigManager:3440 - IP not found : USB_OTG
+2024-06-10 15:13:04,046 [WARN] CodeGenerator:3939 - IP not found : null
+2024-06-10 15:13:04,046 [WARN] CodeGenerator:3939 - IP not found : null
+2024-06-10 15:13:04,072 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\main.h_save
+2024-06-10 15:13:04,160 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\main.h
+2024-06-10 15:13:04,181 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\main.c_save
+2024-06-10 15:13:04,320 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\main.c
+2024-06-10 15:13:05,071 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 252mS.
+2024-06-10 15:13:05,074 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2024-06-10 15:13:05,282 [INFO] ConfigFileManager:1495 - The Die is : DIE419
+2024-06-10 15:13:07,157 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 2083mS.
+2024-06-10 15:13:07,158 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 1mS.
+2024-06-10 15:13:07,160 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2024-06-10 15:26:35,270 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-06-10 15:28:12,108 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 952474008 Bytes (1073741824)
+2024-06-10 15:28:12,285 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 775048384 Bytes (1073741824)
+2024-06-10 15:28:13,045 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 865870936 Bytes (1073741824)
+2024-06-10 15:28:13,188 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2024-06-10 15:28:13,188 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2024-06-10 15:28:13,188 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-06-10 15:28:13,188 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-06-10 15:28:13,188 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USB_OTG_FS
+2024-06-10 15:28:13,188 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-06-10 15:28:13,188 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-06-10 15:28:13,189 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-06-10 15:28:13,189 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2024-06-10 15:28:13,189 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2024-06-10 15:28:13,406 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\license.tmp_save
+2024-06-10 15:28:13,538 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\license.tmp
+2024-06-10 15:28:13,592 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\gpio.tmp_save
+2024-06-10 15:28:13,752 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\gpio.tmp
+2024-06-10 15:28:13,931 [WARN] IPConfigManager:2946 - Warning: the RefConfig PWREx_EnableUSBVoltageDetector is not available in your config.xml file
+2024-06-10 15:28:13,959 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_it.c_save
+2024-06-10 15:28:14,090 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_it.c
+2024-06-10 15:28:14,095 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_it.h_save
+2024-06-10 15:28:14,142 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_it.h
+2024-06-10 15:28:14,166 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_hal_msp.c_save
+2024-06-10 15:28:14,320 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_hal_msp.c
+2024-06-10 15:28:14,327 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\system.tmp_save
+2024-06-10 15:28:14,416 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\system.tmp
+2024-06-10 15:28:14,447 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-06-10 15:28:14,606 [INFO] CodeEngine:335 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_hal_conf.h
+2024-06-10 15:28:14,638 [WARN] IPConfigManager:3440 - IP not found : TIM
+2024-06-10 15:28:14,638 [WARN] IPConfigManager:3440 - IP not found : USB_OTG
+2024-06-10 15:28:14,638 [WARN] CodeGenerator:3939 - IP not found : null
+2024-06-10 15:28:14,638 [WARN] CodeGenerator:3939 - IP not found : null
+2024-06-10 15:28:14,690 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\main.h_save
+2024-06-10 15:28:14,795 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\main.h
+2024-06-10 15:28:14,816 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\main.c_save
+2024-06-10 15:28:14,947 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\main.c
+2024-06-10 15:28:15,696 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 259mS.
+2024-06-10 15:28:15,700 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2024-06-10 15:28:15,907 [INFO] ConfigFileManager:1495 - The Die is : DIE419
+2024-06-10 15:28:17,686 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 1986mS.
+2024-06-10 15:28:17,686 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2024-06-10 15:28:17,689 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2024-06-10 15:28:30,627 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-06-10 15:28:31,922 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 895136832 Bytes (1073741824)
+2024-06-10 15:28:32,090 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 830217352 Bytes (1073741824)
+2024-06-10 15:28:32,717 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 872418488 Bytes (1073741824)
+2024-06-10 15:28:33,027 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2024-06-10 15:28:33,027 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2024-06-10 15:28:33,027 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-06-10 15:28:33,027 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-06-10 15:28:33,027 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USB_OTG_FS
+2024-06-10 15:28:33,027 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-06-10 15:28:33,027 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-06-10 15:28:33,028 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-06-10 15:28:33,028 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2024-06-10 15:28:33,029 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2024-06-10 15:28:33,302 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\license.tmp_save
+2024-06-10 15:28:33,656 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\license.tmp
+2024-06-10 15:28:33,674 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\gpio.tmp_save
+2024-06-10 15:28:33,764 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\gpio.tmp
+2024-06-10 15:28:33,905 [WARN] IPConfigManager:2946 - Warning: the RefConfig PWREx_EnableUSBVoltageDetector is not available in your config.xml file
+2024-06-10 15:28:33,968 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_it.c_save
+2024-06-10 15:28:34,182 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_it.c
+2024-06-10 15:28:34,189 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_it.h_save
+2024-06-10 15:28:34,303 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_it.h
+2024-06-10 15:28:34,334 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_hal_msp.c_save
+2024-06-10 15:28:34,470 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_hal_msp.c
+2024-06-10 15:28:34,474 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\system.tmp_save
+2024-06-10 15:28:34,520 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\system.tmp
+2024-06-10 15:28:34,554 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-06-10 15:28:34,675 [INFO] CodeEngine:335 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_hal_conf.h
+2024-06-10 15:28:34,702 [WARN] IPConfigManager:3440 - IP not found : TIM
+2024-06-10 15:28:34,702 [WARN] IPConfigManager:3440 - IP not found : USB_OTG
+2024-06-10 15:28:34,702 [WARN] CodeGenerator:3939 - IP not found : null
+2024-06-10 15:28:34,702 [WARN] CodeGenerator:3939 - IP not found : null
+2024-06-10 15:28:34,727 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\main.h_save
+2024-06-10 15:28:34,826 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\main.h
+2024-06-10 15:28:34,847 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\main.c_save
+2024-06-10 15:28:34,986 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\main.c
+2024-06-10 15:28:35,751 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 230mS.
+2024-06-10 15:28:35,753 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2024-06-10 15:28:35,959 [INFO] ConfigFileManager:1495 - The Die is : DIE419
+2024-06-10 15:28:37,707 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 1953mS.
+2024-06-10 15:28:37,707 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2024-06-10 15:28:37,717 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2024-06-10 16:13:31,821 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-06-10 16:14:11,826 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-06-10 16:14:16,415 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-06-10 16:14:17,862 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 886635640 Bytes (1073741824)
+2024-06-10 16:14:18,315 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 925957240 Bytes (1073741824)
+2024-06-10 16:14:19,140 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 864555928 Bytes (1073741824)
+2024-06-10 16:14:19,322 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2024-06-10 16:14:19,322 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2024-06-10 16:14:19,322 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-06-10 16:14:19,322 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-06-10 16:14:19,322 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USB_OTG_FS
+2024-06-10 16:14:19,322 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-06-10 16:14:19,322 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-06-10 16:14:19,322 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-06-10 16:14:19,322 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2024-06-10 16:14:19,323 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2024-06-10 16:14:19,505 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\license.tmp_save
+2024-06-10 16:14:19,637 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\license.tmp
+2024-06-10 16:14:19,678 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\gpio.tmp_save
+2024-06-10 16:14:19,850 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\gpio.tmp
+2024-06-10 16:14:20,020 [WARN] IPConfigManager:2946 - Warning: the RefConfig PWREx_EnableUSBVoltageDetector is not available in your config.xml file
+2024-06-10 16:14:20,046 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_it.c_save
+2024-06-10 16:14:20,205 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_it.c
+2024-06-10 16:14:20,212 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_it.h_save
+2024-06-10 16:14:20,263 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_it.h
+2024-06-10 16:14:20,287 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_hal_msp.c_save
+2024-06-10 16:14:20,431 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_hal_msp.c
+2024-06-10 16:14:20,439 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\system.tmp_save
+2024-06-10 16:14:20,526 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\system.tmp
+2024-06-10 16:14:20,557 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-06-10 16:14:20,731 [INFO] CodeEngine:335 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_hal_conf.h
+2024-06-10 16:14:20,762 [WARN] IPConfigManager:3440 - IP not found : TIM
+2024-06-10 16:14:20,762 [WARN] IPConfigManager:3440 - IP not found : USB_OTG
+2024-06-10 16:14:20,763 [WARN] CodeGenerator:3939 - IP not found : null
+2024-06-10 16:14:20,763 [WARN] CodeGenerator:3939 - IP not found : null
+2024-06-10 16:14:20,789 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\main.h_save
+2024-06-10 16:14:20,908 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\main.h
+2024-06-10 16:14:20,928 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\main.c_save
+2024-06-10 16:14:21,056 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\main.c
+2024-06-10 16:14:21,679 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 250mS.
+2024-06-10 16:14:21,682 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2024-06-10 16:14:21,921 [INFO] ConfigFileManager:1495 - The Die is : DIE419
+2024-06-10 16:14:23,597 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 1915mS.
+2024-06-10 16:14:23,598 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 1mS.
+2024-06-10 16:14:23,602 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2024-06-10 16:42:22,825 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-06-10 16:42:31,501 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 823980000 Bytes (1073741824)
+2024-06-10 16:42:32,016 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 864352224 Bytes (1073741824)
+2024-06-10 16:42:32,807 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 852310312 Bytes (1073741824)
+2024-06-10 16:42:33,098 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2024-06-10 16:42:33,098 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2024-06-10 16:42:33,098 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-06-10 16:42:33,098 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-06-10 16:42:33,099 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USB_OTG_FS
+2024-06-10 16:42:33,099 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-06-10 16:42:33,099 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-06-10 16:42:33,099 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-06-10 16:42:33,099 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2024-06-10 16:42:33,100 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2024-06-10 16:42:33,367 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\license.tmp_save
+2024-06-10 16:42:33,458 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\license.tmp
+2024-06-10 16:42:33,476 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\gpio.tmp_save
+2024-06-10 16:42:33,602 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\gpio.tmp
+2024-06-10 16:42:33,774 [WARN] IPConfigManager:2946 - Warning: the RefConfig PWREx_EnableUSBVoltageDetector is not available in your config.xml file
+2024-06-10 16:42:33,824 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_it.c_save
+2024-06-10 16:42:34,027 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_it.c
+2024-06-10 16:42:34,038 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_it.h_save
+2024-06-10 16:42:34,147 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_it.h
+2024-06-10 16:42:34,190 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_hal_msp.c_save
+2024-06-10 16:42:34,328 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_hal_msp.c
+2024-06-10 16:42:34,332 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\system.tmp_save
+2024-06-10 16:42:34,383 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\system.tmp
+2024-06-10 16:42:34,413 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-06-10 16:42:34,535 [INFO] CodeEngine:335 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_hal_conf.h
+2024-06-10 16:42:34,562 [WARN] IPConfigManager:3440 - IP not found : TIM
+2024-06-10 16:42:34,562 [WARN] IPConfigManager:3440 - IP not found : USB_OTG
+2024-06-10 16:42:34,563 [WARN] CodeGenerator:3939 - IP not found : null
+2024-06-10 16:42:34,563 [WARN] CodeGenerator:3939 - IP not found : null
+2024-06-10 16:42:34,585 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\main.h_save
+2024-06-10 16:42:34,678 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\main.h
+2024-06-10 16:42:34,699 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\main.c_save
+2024-06-10 16:42:34,841 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\main.c
+2024-06-10 16:42:35,523 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 197mS.
+2024-06-10 16:42:35,524 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2024-06-10 16:42:35,734 [INFO] ConfigFileManager:1495 - The Die is : DIE419
+2024-06-10 16:42:37,490 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 1966mS.
+2024-06-10 16:42:37,491 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2024-06-10 16:42:37,494 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2024-06-10 16:49:16,026 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-06-10 16:49:17,675 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 815500848 Bytes (1073741824)
+2024-06-10 16:49:18,309 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 856921648 Bytes (1073741824)
+2024-06-10 16:49:18,959 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 897289776 Bytes (1073741824)
+2024-06-10 16:49:19,234 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2024-06-10 16:49:19,234 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2024-06-10 16:49:19,234 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-06-10 16:49:19,234 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-06-10 16:49:19,234 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USB_OTG_FS
+2024-06-10 16:49:19,234 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-06-10 16:49:19,234 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-06-10 16:49:19,235 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-06-10 16:49:19,235 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2024-06-10 16:49:19,236 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2024-06-10 16:49:19,469 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\license.tmp_save
+2024-06-10 16:49:19,650 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\license.tmp
+2024-06-10 16:49:19,686 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\gpio.tmp_save
+2024-06-10 16:49:19,809 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\gpio.tmp
+2024-06-10 16:49:19,906 [WARN] IPConfigManager:2946 - Warning: the RefConfig PWREx_EnableUSBVoltageDetector is not available in your config.xml file
+2024-06-10 16:49:19,933 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_it.c_save
+2024-06-10 16:49:20,107 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_it.c
+2024-06-10 16:49:20,116 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_it.h_save
+2024-06-10 16:49:20,197 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_it.h
+2024-06-10 16:49:20,229 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_hal_msp.c_save
+2024-06-10 16:49:20,425 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_hal_msp.c
+2024-06-10 16:49:20,432 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\system.tmp_save
+2024-06-10 16:49:20,515 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\system.tmp
+2024-06-10 16:49:20,543 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-06-10 16:49:20,656 [INFO] CodeEngine:335 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_hal_conf.h
+2024-06-10 16:49:20,679 [WARN] IPConfigManager:3440 - IP not found : TIM
+2024-06-10 16:49:20,679 [WARN] IPConfigManager:3440 - IP not found : USB_OTG
+2024-06-10 16:49:20,679 [WARN] CodeGenerator:3939 - IP not found : null
+2024-06-10 16:49:20,679 [WARN] CodeGenerator:3939 - IP not found : null
+2024-06-10 16:49:20,707 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\main.h_save
+2024-06-10 16:49:20,800 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\main.h
+2024-06-10 16:49:20,821 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\main.c_save
+2024-06-10 16:49:20,971 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\main.c
+2024-06-10 16:49:21,678 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 196mS.
+2024-06-10 16:49:21,680 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2024-06-10 16:49:21,898 [INFO] ConfigFileManager:1495 - The Die is : DIE419
+2024-06-10 16:49:23,606 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 1926mS.
+2024-06-10 16:49:23,607 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 1mS.
+2024-06-10 16:49:23,611 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2024-06-10 16:59:37,325 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-06-10 16:59:40,701 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-06-10 17:00:25,977 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-06-10 17:01:41,116 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 867343928 Bytes (1073741824)
+2024-06-10 17:01:41,333 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 891987512 Bytes (1073741824)
+2024-06-10 17:01:42,006 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 836935264 Bytes (1073741824)
+2024-06-10 17:01:42,220 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2024-06-10 17:01:42,220 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2024-06-10 17:01:42,220 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-06-10 17:01:42,220 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-06-10 17:01:42,220 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USB_OTG_FS
+2024-06-10 17:01:42,220 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-06-10 17:01:42,220 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-06-10 17:01:42,221 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-06-10 17:01:42,221 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2024-06-10 17:01:42,222 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2024-06-10 17:01:42,451 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\license.tmp_save
+2024-06-10 17:01:42,605 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\license.tmp
+2024-06-10 17:01:42,639 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\gpio.tmp_save
+2024-06-10 17:01:42,767 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\gpio.tmp
+2024-06-10 17:01:42,927 [WARN] IPConfigManager:2946 - Warning: the RefConfig PWREx_EnableUSBVoltageDetector is not available in your config.xml file
+2024-06-10 17:01:42,973 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_it.c_save
+2024-06-10 17:01:43,195 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_it.c
+2024-06-10 17:01:43,247 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_it.h_save
+2024-06-10 17:01:43,337 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_it.h
+2024-06-10 17:01:43,371 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_hal_msp.c_save
+2024-06-10 17:01:43,513 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_hal_msp.c
+2024-06-10 17:01:43,517 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\system.tmp_save
+2024-06-10 17:01:43,563 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\system.tmp
+2024-06-10 17:01:43,587 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-06-10 17:01:43,723 [INFO] CodeEngine:335 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_hal_conf.h
+2024-06-10 17:01:43,753 [WARN] IPConfigManager:3440 - IP not found : TIM
+2024-06-10 17:01:43,754 [WARN] IPConfigManager:3440 - IP not found : USB_OTG
+2024-06-10 17:01:43,754 [WARN] CodeGenerator:3939 - IP not found : null
+2024-06-10 17:01:43,755 [WARN] CodeGenerator:3939 - IP not found : null
+2024-06-10 17:01:43,778 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\main.h_save
+2024-06-10 17:01:43,867 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\main.h
+2024-06-10 17:01:43,889 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\main.c_save
+2024-06-10 17:01:44,033 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\main.c
+2024-06-10 17:01:44,750 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 241mS.
+2024-06-10 17:01:44,752 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2024-06-10 17:01:44,955 [INFO] ConfigFileManager:1495 - The Die is : DIE419
+2024-06-10 17:01:46,619 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 1868mS.
+2024-06-10 17:01:46,620 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2024-06-10 17:01:46,623 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2024-06-10 17:07:50,760 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-06-10 17:10:34,283 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 848408136 Bytes (1073741824)
+2024-06-10 17:10:34,483 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 871999048 Bytes (1073741824)
+2024-06-10 17:10:35,173 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 916039240 Bytes (1073741824)
+2024-06-10 17:10:35,430 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2024-06-10 17:10:35,431 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2024-06-10 17:10:35,431 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-06-10 17:10:35,431 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-06-10 17:10:35,431 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USB_OTG_FS
+2024-06-10 17:10:35,431 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-06-10 17:10:35,431 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-06-10 17:10:35,431 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-06-10 17:10:35,431 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2024-06-10 17:10:35,433 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2024-06-10 17:10:35,658 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\license.tmp_save
+2024-06-10 17:10:35,855 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\license.tmp
+2024-06-10 17:10:35,885 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\gpio.tmp_save
+2024-06-10 17:10:36,005 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\gpio.tmp
+2024-06-10 17:10:36,111 [WARN] IPConfigManager:2946 - Warning: the RefConfig PWREx_EnableUSBVoltageDetector is not available in your config.xml file
+2024-06-10 17:10:36,151 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_it.c_save
+2024-06-10 17:10:36,458 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_it.c
+2024-06-10 17:10:36,464 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_it.h_save
+2024-06-10 17:10:36,582 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_it.h
+2024-06-10 17:10:36,614 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_hal_msp.c_save
+2024-06-10 17:10:36,748 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_hal_msp.c
+2024-06-10 17:10:36,770 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\system.tmp_save
+2024-06-10 17:10:36,828 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\system.tmp
+2024-06-10 17:10:36,857 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-06-10 17:10:36,998 [INFO] CodeEngine:335 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_hal_conf.h
+2024-06-10 17:10:37,033 [WARN] IPConfigManager:3440 - IP not found : TIM
+2024-06-10 17:10:37,033 [WARN] IPConfigManager:3440 - IP not found : USB_OTG
+2024-06-10 17:10:37,033 [WARN] CodeGenerator:3939 - IP not found : null
+2024-06-10 17:10:37,034 [WARN] CodeGenerator:3939 - IP not found : null
+2024-06-10 17:10:37,055 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\main.h_save
+2024-06-10 17:10:37,136 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\main.h
+2024-06-10 17:10:37,158 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\main.c_save
+2024-06-10 17:10:37,348 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\main.c
+2024-06-10 17:10:38,085 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 215mS.
+2024-06-10 17:10:38,087 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2024-06-10 17:10:38,278 [INFO] ConfigFileManager:1495 - The Die is : DIE419
+2024-06-10 17:10:39,939 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 1852mS.
+2024-06-10 17:10:39,940 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 1mS.
+2024-06-10 17:10:39,944 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2024-06-10 17:19:35,612 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-06-10 17:19:39,649 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 827705568 Bytes (1073741824)
+2024-06-10 17:19:40,036 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 853397728 Bytes (1073741824)
+2024-06-10 17:19:40,671 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 832190288 Bytes (1073741824)
+2024-06-10 17:19:40,897 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2024-06-10 17:19:40,897 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2024-06-10 17:19:40,897 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-06-10 17:19:40,897 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-06-10 17:19:40,897 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USB_OTG_FS
+2024-06-10 17:19:40,897 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-06-10 17:19:40,897 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-06-10 17:19:40,898 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-06-10 17:19:40,898 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2024-06-10 17:19:40,899 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2024-06-10 17:19:41,138 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\license.tmp_save
+2024-06-10 17:19:41,297 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\license.tmp
+2024-06-10 17:19:41,342 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\gpio.tmp_save
+2024-06-10 17:19:41,438 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\gpio.tmp
+2024-06-10 17:19:41,544 [WARN] IPConfigManager:2946 - Warning: the RefConfig PWREx_EnableUSBVoltageDetector is not available in your config.xml file
+2024-06-10 17:19:41,579 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_it.c_save
+2024-06-10 17:19:41,829 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_it.c
+2024-06-10 17:19:41,839 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_it.h_save
+2024-06-10 17:19:41,932 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_it.h
+2024-06-10 17:19:41,964 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_hal_msp.c_save
+2024-06-10 17:19:42,167 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_hal_msp.c
+2024-06-10 17:19:42,175 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\system.tmp_save
+2024-06-10 17:19:42,259 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\system.tmp
+2024-06-10 17:19:42,279 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-06-10 17:19:42,402 [INFO] CodeEngine:335 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_hal_conf.h
+2024-06-10 17:19:42,426 [WARN] IPConfigManager:3440 - IP not found : TIM
+2024-06-10 17:19:42,426 [WARN] IPConfigManager:3440 - IP not found : USB_OTG
+2024-06-10 17:19:42,427 [WARN] CodeGenerator:3939 - IP not found : null
+2024-06-10 17:19:42,427 [WARN] CodeGenerator:3939 - IP not found : null
+2024-06-10 17:19:42,454 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\main.h_save
+2024-06-10 17:19:42,528 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\main.h
+2024-06-10 17:19:42,547 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\main.c_save
+2024-06-10 17:19:42,699 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\main.c
+2024-06-10 17:19:43,407 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 201mS.
+2024-06-10 17:19:43,409 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2024-06-10 17:19:43,608 [INFO] ConfigFileManager:1495 - The Die is : DIE419
+2024-06-10 17:19:45,332 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 1923mS.
+2024-06-10 17:19:45,333 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 1mS.
+2024-06-10 17:19:45,337 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 1mS.
+2024-06-10 17:34:14,043 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-06-10 17:34:16,567 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-06-10 17:50:16,826 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 889022744 Bytes (1073741824)
+2024-06-10 17:50:17,014 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 913666328 Bytes (1073741824)
+2024-06-10 17:50:17,582 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 801775384 Bytes (1073741824)
+2024-06-10 17:50:17,786 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2024-06-10 17:50:17,786 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2024-06-10 17:50:17,786 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-06-10 17:50:17,786 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-06-10 17:50:17,786 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USB_OTG_FS
+2024-06-10 17:50:17,786 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-06-10 17:50:17,786 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-06-10 17:50:17,786 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-06-10 17:50:17,786 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2024-06-10 17:50:17,788 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2024-06-10 17:50:17,997 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\license.tmp_save
+2024-06-10 17:50:18,155 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\license.tmp
+2024-06-10 17:50:18,194 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\gpio.tmp_save
+2024-06-10 17:50:18,335 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\gpio.tmp
+2024-06-10 17:50:18,439 [WARN] IPConfigManager:2946 - Warning: the RefConfig PWREx_EnableUSBVoltageDetector is not available in your config.xml file
+2024-06-10 17:50:18,466 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_it.c_save
+2024-06-10 17:50:18,668 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_it.c
+2024-06-10 17:50:18,693 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_it.h_save
+2024-06-10 17:50:18,796 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_it.h
+2024-06-10 17:50:18,827 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_hal_msp.c_save
+2024-06-10 17:50:19,070 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\stm32f4xx_hal_msp.c
+2024-06-10 17:50:19,077 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\system.tmp_save
+2024-06-10 17:50:19,151 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\MXTmpFiles\system.tmp
+2024-06-10 17:50:19,175 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-06-10 17:50:19,284 [INFO] CodeEngine:335 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\stm32f4xx_hal_conf.h
+2024-06-10 17:50:19,308 [WARN] IPConfigManager:3440 - IP not found : TIM
+2024-06-10 17:50:19,308 [WARN] IPConfigManager:3440 - IP not found : USB_OTG
+2024-06-10 17:50:19,308 [WARN] CodeGenerator:3939 - IP not found : null
+2024-06-10 17:50:19,308 [WARN] CodeGenerator:3939 - IP not found : null
+2024-06-10 17:50:19,330 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\main.h_save
+2024-06-10 17:50:19,426 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Inc\main.h
+2024-06-10 17:50:19,449 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\main.c_save
+2024-06-10 17:50:19,581 [INFO] CodeEngine:279 - Generated code: C:\Users\choua\STM32CubeIDE\AutoBookshelf\testMisumi\Core\Src\main.c
+2024-06-10 17:50:20,278 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 253mS.
+2024-06-10 17:50:20,281 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2024-06-10 17:50:20,483 [INFO] ConfigFileManager:1495 - The Die is : DIE419
+2024-06-10 17:50:22,132 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 1851mS.
+2024-06-10 17:50:22,133 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 1mS.
+2024-06-10 17:50:22,147 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.

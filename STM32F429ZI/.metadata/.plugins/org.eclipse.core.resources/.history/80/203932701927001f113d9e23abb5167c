@@ -1,0 +1,16 @@
+/*
+ * stepper.h
+ *
+ *  Created on: Jun 10, 2024
+ *      Author: choua
+ */
+
+#ifndef INC_STEPPER_H_
+#define INC_STEPPER_H_
+
+TIM_Handle_TypeDef *htim;
+uint32_t steps_remain;
+
+
+
+#endif /* INC_STEPPER_H_ */
