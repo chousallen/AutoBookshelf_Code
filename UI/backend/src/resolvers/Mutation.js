@@ -35,7 +35,7 @@ export const Mutation = {
         {
             const book = books[bookIndex];
             //const command = `python ./src/py/main.py --message "${book.shelfNo}"`;
-            const command = `python ./src/py/main.py --message "-s00${book.shelfNo - 1}aaaaa\n"`;
+            const command = `python ./src/py/main.py --message "#s00${book.shelfNo - 1}aaaaaaaaaa"`;
             //console.log(`python ./src/py/main.py --message "${book.shelfNo}"`);
             try {
                 const { stdout, stderr } = await execPromise(command);

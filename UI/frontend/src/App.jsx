@@ -153,7 +153,7 @@ const App = () => {
             <ul>
                 {data.books.map((book) => (
                     <li key={book.id}>
-                        {book.title} (in shelf no.{book.shelfNo})
+                        <span><b>{book.title}</b> (in shelf no.{book.shelfNo})</span>
                         <button onClick={() => handleDeleteBook(book.id)}>Take this stuff</button>
                     </li>
                 ))}

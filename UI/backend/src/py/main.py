@@ -1,5 +1,6 @@
 import argparse
 import serial
+import time
 
 BT_PORT = "COM5"
 
@@ -13,12 +14,15 @@ def main(message: str):
         port = BT_PORT,
         baudrate = 9600
     )
-    enter = "\n"
-    send = enter.encode("utf-8")
+    pre = "\n"
+    send = pre.encode("utf-8")
     ser.write(send)
-    send = message.encode("utf-8")
+    pre = message + pre
+    send = pre.encode("utf-8")
     ser.write(send)
     print(message)
+    #time.sleep(10)
+        
 
 if __name__ == "__main__":
     args = parse_args()
