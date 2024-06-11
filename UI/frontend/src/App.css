@@ -78,3 +78,22 @@ button:hover {
   text-align: center;
   color: #ff0000;
 }
+
+.information button {
+  background-color: #8b8b8b;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.information button:hover {
+  background-color: #8b8b8b;
+}
+
+img {
+  width: 700px;
+  height: 200px;
+  object-fit: scale-down;
+}
