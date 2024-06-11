@@ -1,7 +1,7 @@
-const Aurthor = () => {
+const Author = () => {
     return (
         <div className="container">
-            <h1 id="title">Aurthor</h1>
+            <h1 id="title">Author</h1>
             <p>The auto shelf is made by CarCar Wed afternoon team 3, including following creators:</p>
             <ul>
                 <li><span><b>周冠宇</b>: Hardware (STM32, motor, encoder, UART communication, etc.)</span></li>
@@ -12,4 +12,4 @@ const Aurthor = () => {
     );
 };
 
-export default Aurthor;
+export default Author;

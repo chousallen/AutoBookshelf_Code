@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import Lobby from "./view/Lobby.jsx";
 import Instruction from "./view/Instruction.jsx";
-import Aurthor from "./view/Aurthor.jsx";
+import Author from "./view/Author.jsx";
 import Easter from "./view/Easter.jsx";
 
 const App = () => {
@@ -12,10 +12,10 @@ const App = () => {
         <div className="container">
             {currentPage === "Lobby" && <Lobby />}
             {currentPage === "Instruction" && <Instruction />}
-            {currentPage === "Aurthor" && <Aurthor />}
+            {currentPage === "Author" && <Author />}
             {currentPage === "Easter" && <Easter />}
             <span className="information">
-                <button onClick={() => setCurrentPage("Instruction")}>How to use?</button> <button onClick={() => setCurrentPage("Aurthor")}>Aurthor</button> {!(currentPage === "Lobby") && <button onClick={() => setCurrentPage("Lobby")}>Go Back</button>}
+                <button onClick={() => setCurrentPage("Instruction")}>How to use?</button> <button onClick={() => setCurrentPage("Author")}>Author</button> {!(currentPage === "Lobby") && <button onClick={() => setCurrentPage("Lobby")}>Go Back</button>}
             </span>
             <span className="secret">
                 <button onClick={() => setCurrentPage("Easter")}>Self Destruct</button>
