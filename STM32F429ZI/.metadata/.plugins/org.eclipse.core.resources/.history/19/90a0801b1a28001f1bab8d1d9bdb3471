@@ -1,0 +1,28 @@
+/*
+ * bluetooth.h
+ *
+ *  Created on: Jun 12, 2024
+ *      Author: choua
+ */
+
+#ifndef INC_BLUETOOTH_H_
+#define INC_BLUETOOTH_H_
+
+pUART_CallbackTypeDef pTxCpltCB, pRxCpltCB;
+
+void BT_Config();
+
+
+
+
+
+void BT_Config()
+{
+	pTxCpltCB = _pTxCpltCB;
+	pRxCpltCB = _pRxCpltCB;
+	HAL_UART_RegisterCallback(&BT_UART, HAL_UART_TX_COMPLETE_CB_ID, pTxCpltCB);
+	HAL_UART_RegisterCallback(&BT_UART, HAL_UART_RX_COMPLETE_CB_ID, pTxCpltCB);
+}
+
+
+#endif /* INC_BLUETOOTH_H_ */

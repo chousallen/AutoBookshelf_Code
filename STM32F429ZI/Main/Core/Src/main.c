@@ -19,11 +19,11 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "string.h"
-#include "bluetooth.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "stepper.h"
+#include "bluetooth.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -36,9 +36,9 @@
 #define STEPPER_TIMER &htim1
 #define STEPPER_INTERVAL 1000
 //bluetooth
-#define MESSAGE_LENGTH 8
-#define MSG_FRONT '-'
-#define MSG_END '%'
+#define MESSAGE_LENGTH 16
+#define MSG_FRONT '#'
+#define MSG_END '\n'
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -87,7 +87,7 @@ int steps;
 
 uint8_t press, callback;
 uint16_t distance = 2700;
-uint8_t curr_shelf, desti_shelf;
+uint8_t curr_shelf = 3, desti_shelf;
 
 uint8_t bttry;
 
@@ -119,27 +119,26 @@ void Process_Message(uint8_t* msg)
 		{
 			if(Stepper_Cplt() != 1)
 			{
-				uint8_t err[MESSAGE_LENGTH] = {MSG_FRONT, 'E', 'b', 'u', 's', 'y', '*', MSG_END};
-				memcpy(transmit, err, MESSAGE_LENGTH);
-				BT_Transmit(transmit);
+				BT_Transmit_Char("ErrorBusy**");
 			}
-			uint8_t get_msg[] = {MSG_FRONT, 'g', 'e', 't', '*', '*', '*', MSG_END};
-			memcpy(transmit, get_msg, MESSAGE_LENGTH);
-			BT_Transmit(transmit);
+			BT_Transmit_Char("get*****");
 			uint8_t shelf_num = (msg[2]-'0')*100 + (msg[3]-'0')*10 + (msg[4]-'0');
 			if(shelf_num == curr_shelf)
 			{
-				uint8_t cplt_msg[] = {MSG_FRONT, 's', 'c', 'p', 'l', 't', '*', MSG_END};
-				memcpy(transmit, cplt_msg, MESSAGE_LENGTH);
+				BT_Transmit_Char("Not Change");
 				return ;
 			}
 			Rotate_toShelf(shelf_num);
 			return ;
 		}
 	}
-	uint8_t err[MESSAGE_LENGTH] = {MSG_FRONT, 'E', 'f', 'o', 'm', 'a', 't', MSG_END};
-	memcpy(transmit, err, MESSAGE_LENGTH);
-	BT_Transmit(transmit);
+	BT_Transmit_Char("FormatErr");
+	while(BT_Start_Receive() == 0)
+	{
+	  HAL_GPIO_TogglePin(LD1_GPIO_Port, LD1_Pin);
+	  bttry++;
+	}
+	HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin, RESET);
 }
 
 /* USER CODE END 0 */
@@ -182,13 +181,17 @@ int main(void)
 
   Stepper_Config(STEPPER_TIMER, TIM_CHANNEL_1, STEPPER_INTERVAL, Stepper_Dir_GPIO_Port, Stepper_Dir_Pin);
 
-  BT_Config(bt_huart, MESSAGE_LENGTH, MSG_END);
-  while(BT_Start_Receive() == 0)
+  BT_Config(bt_huart, MESSAGE_LENGTH, MSG_FRONT, MSG_END);
+  BT_Transmit_Char("AutoBookshelf");
+  BT_Transmit_Char("Polling RESET");
+  while(BT_Start_Receive() != 1)
   {
 	  HAL_GPIO_TogglePin(LD1_GPIO_Port, LD1_Pin);
 	  bttry++;
   }
   HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin, RESET);
+  BT_Transmit_Char("RESET SUCCESS");
+  HAL_Delay(1);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -491,7 +494,7 @@ static void MX_DMA_Init(void)
 
   /* DMA interrupt init */
   /* DMA1_Stream5_IRQn interrupt configuration */
-  HAL_NVIC_SetPriority(DMA1_Stream5_IRQn, 0, 0);
+  HAL_NVIC_SetPriority(DMA1_Stream5_IRQn, 1, 0);
   HAL_NVIC_EnableIRQ(DMA1_Stream5_IRQn);
   /* DMA1_Stream6_IRQn interrupt configuration */
   HAL_NVIC_SetPriority(DMA1_Stream6_IRQn, 0, 0);
@@ -585,9 +588,7 @@ void Stepper_Rotate_Cplt_CB()
 	callback++;
 	HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin, RESET);
 	curr_shelf = desti_shelf;
-	uint8_t cplt_msg[] = {MSG_FRONT, 's', 'c', 'p', 'l', 't', '*', MSG_END};
-	memcpy(transmit, cplt_msg, MESSAGE_LENGTH);
-	BT_Transmit(transmit);
+	BT_Transmit_Char("rotate cplt");
 }
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
