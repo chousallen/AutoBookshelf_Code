@@ -1,0 +1,55 @@
+/*
+ * bluetooth.h
+ *
+ *  Created on: Jun 12, 2024
+ *      Author: choua
+ */
+
+#ifndef INC_BLUETOOTH_H_
+#define INC_BLUETOOTH_H_
+
+#include "main.h"
+
+//Call User CB
+void(*User_TxCplt_CB)(void);
+void(*User_RxCplt_CB)(void);
+
+void BT_Config(void(*_User_TxCplt_CB)(void), void(*_User_RxCplt_CB)(void));
+void BT_TxCplt();
+void BT_RxCplt();
+uint8_t tx_cplt, rx_cplt;
+uint8_t tx_msg[MSG_LEN], rx_msg[MSG_LEN];
+
+
+
+void BT_Config(void(*_User_TxCplt_CB)(void), void(*_User_RxCplt_CB)(void))
+{
+	User_TxCplt_CB = _User_TxCplt_CB;
+	User_RxCplt_CB = _User_RxCplt_CB;
+	HAL_UART_RegisterCallback(&BT_UART, HAL_UART_TX_COMPLETE_CB_ID, BT_TxCplt);
+	HAL_UART_RegisterCallback(&BT_UART, HAL_UART_RX_COMPLETE_CB_ID, BT_RxCplt);
+	tx_cplt = 1;
+	rx_cplt = 1;
+}
+
+uint8_t BT_Transmit(uint8_t* msg)
+{
+	if(tx_cplt == 0)
+		return 0;
+	tx_cplt = 0;
+	HAL_UART
+}
+
+void BT_TxCplt()
+{
+	tx_cplt = 1;
+	User_TxCplt_CB();
+
+}
+
+void BT_RxCplt()
+{
+	rx_cplt - 1;
+	User_RxCplt_CB();
+}
+#endif /* INC_BLUETOOTH_H_ */

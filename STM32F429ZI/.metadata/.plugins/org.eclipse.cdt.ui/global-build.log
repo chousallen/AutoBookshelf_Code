@@ -1,865 +1,878 @@
-02:23:30 **** Incremental Build of configuration Debug for project Main ****
+05:19:09 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  26268	     28	   3972	  30268	   763c	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+05:19:33 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-size  Main2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26268	     28	   3972	  30268	   763c	Main2.elf
+Finished building: default.size.stdout
+ 
+05:24:14 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  26456	     28	   3980	  30464	   7700	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+05:25:41 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  26460	     28	   3980	  30468	   7704	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+05:41:44 **** Incremental Build of configuration Debug for project Main2 ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
 arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
  
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
    text	   data	    bss	    dec	    hex	filename
-  23260	     24	   3816	  27100	   69dc	Main.elf
+  27752	     28	   4060	  31840	   7c60	Main2.elf
 Finished building: default.size.stdout
  
-Finished building: Main.list
+Finished building: Main2.list
  
-04:16:37 **** Incremental Build of configuration Debug for project Main ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
-../Core/Src/main.c:564:15: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
-  564 |           tmp = BT_Rx_Cplt();
-      |               ^
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
- 
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
-   text	   data	    bss	    dec	    hex	filename
-  24832	     28	   4100	  28960	   7120	Main.elf
-Finished building: default.size.stdout
- 
-Finished building: Main.list
- 
-04:17:22 **** Incremental Build of configuration Debug for project Main ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
- 
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
-   text	   data	    bss	    dec	    hex	filename
-  24832	     28	   4100	  28960	   7120	Main.elf
-Finished building: default.size.stdout
- 
-Finished building: Main.list
- 
-04:19:06 **** Incremental Build of configuration Debug for project Main ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
- 
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
-   text	   data	    bss	    dec	    hex	filename
-  25372	     28	   4372	  29772	   744c	Main.elf
-Finished building: default.size.stdout
- 
-Finished building: Main.list
- 
-05:05:36 **** Incremental Build of configuration Debug for project Main ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
- 
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
-   text	   data	    bss	    dec	    hex	filename
-  25368	     28	   4356	  29752	   7438	Main.elf
-Finished building: default.size.stdout
- 
-Finished building: Main.list
- 
-05:43:44 **** Incremental Build of configuration Debug for project Main ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-In file included from ../Core/Src/main.c:22:
-../Core/Inc/bluetooth.h: In function 'BT_Start_Receive':
-../Core/Inc/bluetooth.h:26:13: error: unknown type name 'uin8_t'; did you mean 'uint8_t'?
-   26 |         for(uin8_t i = 0; i<MES_LEN; i++)
-      |             ^~~~~~
-      |             uint8_t
-make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
-"make -j12 all" terminated with exit code 2. Build might be incomplete.
-05:44:11 **** Incremental Build of configuration Debug for project Main ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
- 
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
-   text	   data	    bss	    dec	    hex	filename
-  25952	     28	   4356	  30336	   7680	Main.elf
-Finished building: default.size.stdout
- 
-Finished building: Main.list
- 
-05:47:51 **** Incremental Build of configuration Debug for project Main ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
- 
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
-   text	   data	    bss	    dec	    hex	filename
-  25976	     28	   4356	  30360	   7698	Main.elf
-Finished building: default.size.stdout
- 
-Finished building: Main.list
- 
-05:51:30 **** Incremental Build of configuration Debug for project Main ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
- 
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
-   text	   data	    bss	    dec	    hex	filename
-  25972	     28	   4356	  30356	   7694	Main.elf
-Finished building: default.size.stdout
- 
-Finished building: Main.list
- 
-05:55:16 **** Incremental Build of configuration Debug for project Main ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
- 
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
-   text	   data	    bss	    dec	    hex	filename
-  25980	     28	   4364	  30372	   76a4	Main.elf
-Finished building: default.size.stdout
- 
-Finished building: Main.list
- 
-06:50:01 **** Incremental Build of configuration Debug for project Main ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
- 
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
-   text	   data	    bss	    dec	    hex	filename
-  25952	     28	   4356	  30336	   7680	Main.elf
-Finished building: default.size.stdout
- 
-Finished building: Main.list
- 
-09:25:43 **** Incremental Build of configuration Debug for project Main ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'Process_Message':
-../Core/Src/main.c:116:33: warning: unused variable 'shelf_num' [-Wunused-variable]
-  116 |                         uint8_t shelf_num = (msg[2]-'0')*100 + (msg[3]-'0')*10 + (msg[4]-'0');
-      |                                 ^~~~~~~~~
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
- 
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
-   text	   data	    bss	    dec	    hex	filename
-  25952	     28	   4356	  30336	   7680	Main.elf
-Finished building: default.size.stdout
- 
-Finished building: Main.list
- 
-09:38:03 **** Incremental Build of configuration Debug for project Main ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
- 
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
-   text	   data	    bss	    dec	    hex	filename
-  25992	     28	   4356	  30376	   76a8	Main.elf
-Finished building: default.size.stdout
- 
-Finished building: Main.list
- 
-09:39:43 **** Incremental Build of configuration Debug for project Main ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
- 
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
-   text	   data	    bss	    dec	    hex	filename
-  26008	     28	   4364	  30400	   76c0	Main.elf
-Finished building: default.size.stdout
- 
-Finished building: Main.list
- 
-09:46:51 **** Incremental Build of configuration Debug for project Main ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
- 
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
-   text	   data	    bss	    dec	    hex	filename
-  26016	     28	   4364	  30408	   76c8	Main.elf
-Finished building: default.size.stdout
- 
-Finished building: Main.list
- 
-09:51:32 **** Incremental Build of configuration Debug for project Main ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
- 
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
-   text	   data	    bss	    dec	    hex	filename
-  26344	     32	   4360	  30736	   7810	Main.elf
-Finished building: default.size.stdout
- 
-Finished building: Main.list
- 
-09:58:11 **** Incremental Build of configuration Debug for project Main ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'Process_Message':
-../Core/Src/main.c:123:42: error: assignment to expression with array type
-  123 |                                 transmit = err;
-      |                                          ^
-../Core/Src/main.c:127:34: error: assignment to expression with array type
-  127 |                         transmit = get_msg;
-      |                                  ^
-../Core/Src/main.c:135:18: error: assignment to expression with array type
-  135 |         transmit = err;
-      |                  ^
-../Core/Src/main.c: In function 'Stepper_Rotate_Cplt_CB':
-../Core/Src/main.c:583:18: error: assignment to expression with array type
-  583 |         transmit = cplt_msg;
-      |                  ^
-make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
-"make -j12 all" terminated with exit code 2. Build might be incomplete.
-09:59:51 **** Incremental Build of configuration Debug for project Main ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'Process_Message':
-../Core/Src/main.c:123:42: error: assignment to expression with array type
-  123 |                                 transmit = &err;
-      |                                          ^
-../Core/Src/main.c:127:34: error: assignment to expression with array type
-  127 |                         transmit = &get_msg;
-      |                                  ^
-../Core/Src/main.c:135:18: error: assignment to expression with array type
-  135 |         transmit = err;
-      |                  ^
-../Core/Src/main.c: In function 'Stepper_Rotate_Cplt_CB':
-../Core/Src/main.c:583:18: error: assignment to expression with array type
-  583 |         transmit = cplt_msg;
-      |                  ^
-make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
-"make -j12 all" terminated with exit code 2. Build might be incomplete.
-09:59:51 **** Incremental Build of configuration Debug for project testUART ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "testUART.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\testUART\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="testUART.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: testUART.elf
- 
-arm-none-eabi-size  testUART.elf 
-arm-none-eabi-objdump -h -S testUART.elf  > "testUART.list"
-   text	   data	    bss	    dec	    hex	filename
-  19340	     24	   4208	  23572	   5c14	testUART.elf
-Finished building: default.size.stdout
- 
-Finished building: testUART.list
- 
-10:00:26 **** Incremental Build of configuration Debug for project Main ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'Process_Message':
-../Core/Src/main.c:123:43: error: lvalue required as left operand of assignment
-  123 |                                 &transmit = &err;
-      |                                           ^
-../Core/Src/main.c:127:34: error: assignment to expression with array type
-  127 |                         transmit = &get_msg;
-      |                                  ^
-../Core/Src/main.c:135:18: error: assignment to expression with array type
-  135 |         transmit = err;
-      |                  ^
-../Core/Src/main.c: In function 'Stepper_Rotate_Cplt_CB':
-../Core/Src/main.c:583:18: error: assignment to expression with array type
-  583 |         transmit = cplt_msg;
-      |                  ^
-make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
-"make -j12 all" terminated with exit code 2. Build might be incomplete.
-10:02:12 **** Incremental Build of configuration Debug for project Main ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'Process_Message':
-../Core/Src/main.c:123:44: error: expected expression before '{' token
-  123 |                                 transmit = {MSG_FRONT, 'E', 'b', 'u', 's', 'y', '*', MSG_END};
-      |                                            ^
-../Core/Src/main.c:128:34: error: assignment to expression with array type
-  128 |                         transmit = &get_msg;
-      |                                  ^
-../Core/Src/main.c:136:18: error: assignment to expression with array type
-  136 |         transmit = err;
-      |                  ^
-../Core/Src/main.c: In function 'Stepper_Rotate_Cplt_CB':
-../Core/Src/main.c:584:18: error: assignment to expression with array type
-  584 |         transmit = cplt_msg;
-      |                  ^
-make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
-"make -j12 all" terminated with exit code 2. Build might be incomplete.
-10:03:49 **** Incremental Build of configuration Debug for project Main ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'Process_Message':
-../Core/Src/main.c:123:42: error: assignment to expression with array type
-  123 |                                 transmit = (uint8_t*)err;
-      |                                          ^
-../Core/Src/main.c:127:34: error: assignment to expression with array type
-  127 |                         transmit = &get_msg;
-      |                                  ^
-../Core/Src/main.c:135:18: error: assignment to expression with array type
-  135 |         transmit = err;
-      |                  ^
-../Core/Src/main.c: In function 'Stepper_Rotate_Cplt_CB':
-../Core/Src/main.c:583:18: error: assignment to expression with array type
-  583 |         transmit = cplt_msg;
-      |                  ^
-make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
-"make -j12 all" terminated with exit code 2. Build might be incomplete.
-10:06:07 **** Incremental Build of configuration Debug for project Main ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'Stepper_Rotate_Cplt_CB':
-../Core/Src/main.c:583:18: error: assignment to expression with array type
-  583 |         transmit = cplt_msg;
-      |                  ^
-make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
-"make -j12 all" terminated with exit code 2. Build might be incomplete.
-10:06:33 **** Incremental Build of configuration Debug for project Main ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
- 
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
-   text	   data	    bss	    dec	    hex	filename
-  26400	     32	   4360	  30792	   7848	Main.elf
-Finished building: default.size.stdout
- 
-Finished building: Main.list
- 
-10:11:45 **** Incremental Build of configuration Debug for project Main ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
- 
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
-   text	   data	    bss	    dec	    hex	filename
-  26452	     32	   4360	  30844	   787c	Main.elf
-Finished building: default.size.stdout
- 
-Finished building: Main.list
- 
-10:21:20 **** Incremental Build of configuration Debug for project Main ****
+06:38:15 **** Incremental Build of configuration Debug for project Main2 ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 ../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:186:15: warning: pointer targets in passing argument 1 of 'BT_Transmit' differ in signedness [-Wpointer-sign]
-  186 |   BT_Transmit("AutoBook");
-      |               ^~~~~~~~~~
-      |               |
-      |               char *
-In file included from ../Core/Src/main.c:22:
-../Core/Inc/bluetooth.h:36:27: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
-   36 | void BT_Transmit(uint8_t *_tx_buff)
-      |                  ~~~~~~~~~^~~~~~~~
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
+../Core/Src/main.c:163:14: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  163 |           if(but = 1 && Stepper_Cplt())
+      |              ^~~
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
  
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
    text	   data	    bss	    dec	    hex	filename
-  26476	     32	   4360	  30868	   7894	Main.elf
+  27792	     28	   4068	  31888	   7c90	Main2.elf
 Finished building: default.size.stdout
  
-Finished building: Main.list
+Finished building: Main2.list
  
-10:22:38 **** Incremental Build of configuration Debug for project Main ****
+06:38:55 **** Incremental Build of configuration Debug for project Main2 ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:186:15: warning: pointer targets in passing argument 1 of 'BT_Transmit' differ in signedness [-Wpointer-sign]
-  186 |   BT_Transmit("_AutoBookshelf_");
-      |               ^~~~~~~~~~~~~~~~~
-      |               |
-      |               char *
-In file included from ../Core/Src/main.c:22:
-../Core/Inc/bluetooth.h:36:27: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
-   36 | void BT_Transmit(uint8_t *_tx_buff)
-      |                  ~~~~~~~~~^~~~~~~~
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
  
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
    text	   data	    bss	    dec	    hex	filename
-  26512	     32	   4376	  30920	   78c8	Main.elf
+  27780	     28	   4068	  31876	   7c84	Main2.elf
 Finished building: default.size.stdout
  
-Finished building: Main.list
+Finished building: Main2.list
  
-10:23:45 **** Incremental Build of configuration Debug for project Main ****
+06:40:08 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-size  Main2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27780	     28	   4068	  31876	   7c84	Main2.elf
+Finished building: default.size.stdout
+ 
+06:41:29 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-size  Main2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27780	     28	   4068	  31876	   7c84	Main2.elf
+Finished building: default.size.stdout
+ 
+06:44:32 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-size  Main2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27780	     28	   4068	  31876	   7c84	Main2.elf
+Finished building: default.size.stdout
+ 
+10:01:25 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-size  Main2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27780	     28	   4068	  31876	   7c84	Main2.elf
+Finished building: default.size.stdout
+ 
+10:13:17 **** Incremental Build of configuration Debug for project Main2 ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:186:15: warning: pointer targets in passing argument 1 of 'BT_Transmit' differ in signedness [-Wpointer-sign]
-  186 |   BT_Transmit("_AutoBookshelf");
-      |               ^~~~~~~~~~~~~~~~
-      |               |
-      |               char *
-In file included from ../Core/Src/main.c:22:
-../Core/Inc/bluetooth.h:36:27: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
-   36 | void BT_Transmit(uint8_t *_tx_buff)
-      |                  ~~~~~~~~~^~~~~~~~
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
  
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
    text	   data	    bss	    dec	    hex	filename
-  26512	     32	   4376	  30920	   78c8	Main.elf
+  27796	     32	   4064	  31892	   7c94	Main2.elf
 Finished building: default.size.stdout
  
-Finished building: Main.list
+Finished building: Main2.list
  
-10:26:45 **** Incremental Build of configuration Debug for project Main ****
+10:15:27 **** Incremental Build of configuration Debug for project Main2 ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-In file included from ../Core/Src/main.c:22:
-../Core/Inc/bluetooth.h: In function 'BT_Transmit_Char':
-../Core/Inc/bluetooth.h:38:9: warning: implicit declaration of function 'BT_Transmit'; did you mean 'BT_Transmit_Char'? [-Wimplicit-function-declaration]
-   38 |         BT_Transmit((uint8_t*)_tx_buff);
-      |         ^~~~~~~~~~~
-      |         BT_Transmit_Char
-../Core/Inc/bluetooth.h: At top level:
-../Core/Inc/bluetooth.h:41:6: warning: conflicting types for 'BT_Transmit'; have 'void(uint8_t *)' {aka 'void(unsigned char *)'}
-   41 | void BT_Transmit(uint8_t *_tx_buff)
-      |      ^~~~~~~~~~~
-../Core/Inc/bluetooth.h:38:9: note: previous implicit declaration of 'BT_Transmit' with type 'void(uint8_t *)' {aka 'void(unsigned char *)'}
-   38 |         BT_Transmit((uint8_t*)_tx_buff);
-      |         ^~~~~~~~~~~
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:186:15: warning: pointer targets in passing argument 1 of 'BT_Transmit' differ in signedness [-Wpointer-sign]
-  186 |   BT_Transmit("_AutoBookshelf");
-      |               ^~~~~~~~~~~~~~~~
-      |               |
-      |               char *
-In file included from ../Core/Src/main.c:22:
-../Core/Inc/bluetooth.h:41:27: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
-   41 | void BT_Transmit(uint8_t *_tx_buff)
-      |                  ~~~~~~~~~^~~~~~~~
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
  
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
    text	   data	    bss	    dec	    hex	filename
-  26512	     32	   4376	  30920	   78c8	Main.elf
+  27864	     32	   4064	  31960	   7cd8	Main2.elf
 Finished building: default.size.stdout
  
-Finished building: Main.list
+Finished building: Main2.list
  
-10:28:35 **** Incremental Build of configuration Debug for project Main ****
+10:20:24 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-size  Main2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27864	     32	   4064	  31960	   7cd8	Main2.elf
+Finished building: default.size.stdout
+ 
+10:24:00 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-size  Main2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27864	     32	   4064	  31960	   7cd8	Main2.elf
+Finished building: default.size.stdout
+ 
+10:35:00 **** Incremental Build of configuration Debug for project Main2 ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-In file included from ../Core/Src/main.c:22:
-../Core/Inc/bluetooth.h: In function 'BT_Transmit_Char':
-../Core/Inc/bluetooth.h:38:9: warning: implicit declaration of function 'BT_Transmit'; did you mean 'BT_Transmit_Char'? [-Wimplicit-function-declaration]
-   38 |         BT_Transmit((uint8_t*)_tx_buff);
-      |         ^~~~~~~~~~~
-      |         BT_Transmit_Char
-../Core/Inc/bluetooth.h: At top level:
-../Core/Inc/bluetooth.h:41:6: warning: conflicting types for 'BT_Transmit'; have 'void(uint8_t *)' {aka 'void(unsigned char *)'}
-   41 | void BT_Transmit(uint8_t *_tx_buff)
-      |      ^~~~~~~~~~~
-../Core/Inc/bluetooth.h:38:9: note: previous implicit declaration of 'BT_Transmit' with type 'void(uint8_t *)' {aka 'void(unsigned char *)'}
-   38 |         BT_Transmit((uint8_t*)_tx_buff);
-      |         ^~~~~~~~~~~
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
  
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
    text	   data	    bss	    dec	    hex	filename
-  26536	     32	   4376	  30944	   78e0	Main.elf
+  27876	     32	   4064	  31972	   7ce4	Main2.elf
 Finished building: default.size.stdout
  
-Finished building: Main.list
+Finished building: Main2.list
  
-10:29:21 **** Incremental Build of configuration Debug for project Main ****
+10:35:35 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-size  Main2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27876	     32	   4064	  31972	   7ce4	Main2.elf
+Finished building: default.size.stdout
+ 
+10:37:41 **** Incremental Build of configuration Debug for project Main2 ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
  
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
    text	   data	    bss	    dec	    hex	filename
-  26536	     32	   4376	  30944	   78e0	Main.elf
+  27884	     32	   4064	  31980	   7cec	Main2.elf
 Finished building: default.size.stdout
  
-Finished building: Main.list
+Finished building: Main2.list
  
-12:02:51 **** Incremental Build of configuration Debug for project Main ****
+10:37:55 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-size  Main2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27884	     32	   4064	  31980	   7cec	Main2.elf
+Finished building: default.size.stdout
+ 
+10:39:36 **** Incremental Build of configuration Debug for project Main2 ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
  
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
    text	   data	    bss	    dec	    hex	filename
-  26536	     32	   4376	  30944	   78e0	Main.elf
+  27900	     32	   4072	  32004	   7d04	Main2.elf
 Finished building: default.size.stdout
  
-Finished building: Main.list
+Finished building: Main2.list
  
-12:12:31 **** Incremental Build of configuration Debug for project Main ****
+10:52:59 **** Incremental Build of configuration Debug for project Main2 ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
  
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
    text	   data	    bss	    dec	    hex	filename
-  26596	     32	   4376	  31004	   791c	Main.elf
+  27856	     32	   4072	  31960	   7cd8	Main2.elf
 Finished building: default.size.stdout
  
-Finished building: Main.list
+Finished building: Main2.list
  
-12:14:37 **** Incremental Build of configuration Debug for project Main ****
+10:56:36 **** Incremental Build of configuration Debug for project Main2 ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
  
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
    text	   data	    bss	    dec	    hex	filename
-  26648	     32	   4376	  31056	   7950	Main.elf
+  27856	     32	   4072	  31960	   7cd8	Main2.elf
 Finished building: default.size.stdout
  
-Finished building: Main.list
+Finished building: Main2.list
  
-12:16:36 **** Incremental Build of configuration Debug for project Main ****
+10:57:52 **** Incremental Build of configuration Debug for project Main2 ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
  
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
    text	   data	    bss	    dec	    hex	filename
-  26660	     32	   4376	  31068	   795c	Main.elf
+  27856	     32	   4072	  31960	   7cd8	Main2.elf
 Finished building: default.size.stdout
  
-Finished building: Main.list
+Finished building: Main2.list
  
-12:17:33 **** Incremental Build of configuration Debug for project Main ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
- 
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
-   text	   data	    bss	    dec	    hex	filename
-  26660	     32	   4376	  31068	   795c	Main.elf
-Finished building: default.size.stdout
- 
-Finished building: Main.list
- 
-12:27:29 **** Incremental Build of configuration Debug for project Main ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'Process_Message':
-../Core/Src/main.c:122:45: warning: pointer targets in passing argument 1 of 'BT_Transmit' differ in signedness [-Wpointer-sign]
-  122 |                                 BT_Transmit("-ErrorBusy**\n");
-      |                                             ^~~~~~~~~~~~~~~~
-      |                                             |
-      |                                             char *
-In file included from ../Core/Src/main.c:22:
-../Core/Inc/bluetooth.h:36:27: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
-   36 | void BT_Transmit(uint8_t *_tx_buff)
-      |                  ~~~~~~~~~^~~~~~~~
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
- 
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
-   text	   data	    bss	    dec	    hex	filename
-  26512	     32	   4376	  30920	   78c8	Main.elf
-Finished building: default.size.stdout
- 
-Finished building: Main.list
- 
-12:27:58 **** Incremental Build of configuration Debug for project Main ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
- 
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
-   text	   data	    bss	    dec	    hex	filename
-  26512	     32	   4376	  30920	   78c8	Main.elf
-Finished building: default.size.stdout
- 
-Finished building: Main.list
- 
-12:31:25 **** Incremental Build of configuration Debug for project Main ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
- 
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
-   text	   data	    bss	    dec	    hex	filename
-  26532	     32	   4376	  30940	   78dc	Main.elf
-Finished building: default.size.stdout
- 
-Finished building: Main.list
- 
-12:32:49 **** Incremental Build of configuration Debug for project Main ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
- 
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
-   text	   data	    bss	    dec	    hex	filename
-  26532	     32	   4376	  30940	   78dc	Main.elf
-Finished building: default.size.stdout
- 
-Finished building: Main.list
- 
-12:35:20 **** Incremental Build of configuration Debug for project Main ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
- 
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
-   text	   data	    bss	    dec	    hex	filename
-  26536	     32	   4376	  30944	   78e0	Main.elf
-Finished building: default.size.stdout
- 
-Finished building: Main.list
- 
-12:36:31 **** Incremental Build of configuration Debug for project Main ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
- 
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
-   text	   data	    bss	    dec	    hex	filename
-  26512	     32	   4376	  30920	   78c8	Main.elf
-Finished building: default.size.stdout
- 
-Finished building: Main.list
- 
-13:57:40 **** Incremental Build of configuration Debug for project Main ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
- 
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
-   text	   data	    bss	    dec	    hex	filename
-  26560	     32	   4376	  30968	   78f8	Main.elf
-Finished building: default.size.stdout
- 
-Finished building: Main.list
- 
-14:20:13 **** Incremental Build of configuration Debug for project Main ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:178:3: error: too few arguments to function 'BT_Config'
-  178 |   BT_Config(bt_huart, MESSAGE_LENGTH, MSG_END);
-      |   ^~~~~~~~~
-In file included from ../Core/Src/main.c:22:
-../Core/Inc/bluetooth.h:16:6: note: declared here
-   16 | void BT_Config(UART_HandleTypeDef *_huart, uint8_t _message_len, uint8_t _msg_front, uint8_t _msg_end)
-      |      ^~~~~~~~~
-make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
-"make -j12 all" terminated with exit code 2. Build might be incomplete.
-14:20:39 **** Incremental Build of configuration Debug for project Main ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
- 
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
-   text	   data	    bss	    dec	    hex	filename
-  26624	     32	   4376	  31032	   7938	Main.elf
-Finished building: default.size.stdout
- 
-Finished building: Main.list
- 
-14:26:11 **** Incremental Build of configuration Debug for project Main ****
-make -j12 all 
-arm-none-eabi-size  Main.elf 
-   text	   data	    bss	    dec	    hex	filename
-  26624	     32	   4376	  31032	   7938	Main.elf
-Finished building: default.size.stdout
- 
-14:44:48 **** Incremental Build of configuration Debug for project Main ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
- 
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
-   text	   data	    bss	    dec	    hex	filename
-  26664	     32	   4376	  31072	   7960	Main.elf
-Finished building: default.size.stdout
- 
-Finished building: Main.list
- 
-14:55:16 **** Incremental Build of configuration Debug for project Main ****
+10:59:51 **** Incremental Build of configuration Debug for project Main2 ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
-../Core/Src/main.c: In function 'Button_Press':
-../Core/Src/main.c:103:9: warning: implicit declaration of function 'BT_Transmit'; did you mean 'HAL_ETH_Transmit'? [-Wimplicit-function-declaration]
-  103 |         BT_Transmit(transmit);
-      |         ^~~~~~~~~~~
-      |         HAL_ETH_Transmit
-../Core/Src/main.c: In function 'Process_Message':
-../Core/Src/main.c:121:33: warning: implicit declaration of function 'BT_Transmit_Char' [-Wimplicit-function-declaration]
-  121 |                                 BT_Transmit_Char("ErrorBusy**");
-      |                                 ^~~~~~~~~~~~~~~~
-../Core/Src/main.c:135:15: warning: implicit declaration of function 'BT_Start_Receive'; did you mean 'UART_Start_Receive_IT'? [-Wimplicit-function-declaration]
-  135 |         while(BT_Start_Receive() == 0)
-      |               ^~~~~~~~~~~~~~~~
-      |               UART_Start_Receive_IT
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:183:3: warning: implicit declaration of function 'BT_Config' [-Wimplicit-function-declaration]
-  183 |   BT_Config(bt_huart, MESSAGE_LENGTH, MSG_FRONT, MSG_END);
-      |   ^~~~~~~~~
-../Core/Src/main.c: In function 'HAL_UART_TxCpltCallback':
-../Core/Src/main.c:606:17: warning: implicit declaration of function 'BT_Tx_Cplt' [-Wimplicit-function-declaration]
-  606 |                 BT_Tx_Cplt();
-      |                 ^~~~~~~~~~
-../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
-../Core/Src/main.c:616:17: warning: implicit declaration of function 'BT_Rx_Cplt' [-Wimplicit-function-declaration]
-  616 |           tmp = BT_Rx_Cplt();
-      |                 ^~~~~~~~~~
-../Core/Src/main.c:616:15: warning: assignment to 'const uint8_t *' {aka 'const unsigned char *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
-  616 |           tmp = BT_Rx_Cplt();
-      |               ^
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `Button_Press':
-C:/Users/choua/STM32CubeIDE/AutoBookshelf/Main/Debug/../Core/Src/main.c:103: undefined reference to `BT_Transmit'
-C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `Process_Message':
-C:/Users/choua/STM32CubeIDE/AutoBookshelf/Main/Debug/../Core/Src/main.c:121: undefined reference to `BT_Transmit_Char'
-C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/choua/STM32CubeIDE/AutoBookshelf/Main/Debug/../Core/Src/main.c:123: undefined reference to `BT_Transmit_Char'
-C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/choua/STM32CubeIDE/AutoBookshelf/Main/Debug/../Core/Src/main.c:127: undefined reference to `BT_Transmit_Char'
-C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/choua/STM32CubeIDE/AutoBookshelf/Main/Debug/../Core/Src/main.c:134: undefined reference to `BT_Transmit_Char'
-C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/choua/STM32CubeIDE/AutoBookshelf/Main/Debug/../Core/Src/main.c:135: undefined reference to `BT_Start_Receive'
-C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `main':
-C:/Users/choua/STM32CubeIDE/AutoBookshelf/Main/Debug/../Core/Src/main.c:183: undefined reference to `BT_Config'
-C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/choua/STM32CubeIDE/AutoBookshelf/Main/Debug/../Core/Src/main.c:184: undefined reference to `BT_Transmit_Char'
-C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/choua/STM32CubeIDE/AutoBookshelf/Main/Debug/../Core/Src/main.c:185: undefined reference to `BT_Transmit_Char'
-C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/choua/STM32CubeIDE/AutoBookshelf/Main/Debug/../Core/Src/main.c:186: undefined reference to `BT_Start_Receive'
-C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/choua/STM32CubeIDE/AutoBookshelf/Main/Debug/../Core/Src/main.c:192: undefined reference to `BT_Transmit_Char'
-C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `Stepper_Rotate_Cplt_CB':
-C:/Users/choua/STM32CubeIDE/AutoBookshelf/Main/Debug/../Core/Src/main.c:590: undefined reference to `BT_Transmit_Char'
-C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `HAL_UART_TxCpltCallback':
-C:/Users/choua/STM32CubeIDE/AutoBookshelf/Main/Debug/../Core/Src/main.c:606: undefined reference to `BT_Tx_Cplt'
-C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `HAL_UART_RxCpltCallback':
-C:/Users/choua/STM32CubeIDE/AutoBookshelf/Main/Debug/../Core/Src/main.c:616: undefined reference to `BT_Rx_Cplt'
-collect2.exe: error: ld returned 1 exit status
-make: *** [makefile:64: Main.elf] Error 1
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  27856	     32	   4072	  31960	   7cd8	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+11:00:22 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-size  Main2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27856	     32	   4072	  31960	   7cd8	Main2.elf
+Finished building: default.size.stdout
+ 
+11:00:43 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-size  Main2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27856	     32	   4072	  31960	   7cd8	Main2.elf
+Finished building: default.size.stdout
+ 
+11:01:57 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  27856	     32	   4072	  31960	   7cd8	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+11:03:01 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  27856	     32	   4072	  31960	   7cd8	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+11:04:34 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  27856	     32	   4072	  31960	   7cd8	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+11:05:49 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  27856	     32	   4072	  31960	   7cd8	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+11:07:06 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  27856	     32	   4072	  31960	   7cd8	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+11:08:33 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  27856	     32	   4072	  31960	   7cd8	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+11:11:41 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  27856	     32	   4072	  31960	   7cd8	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+11:13:56 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  27856	     32	   4072	  31960	   7cd8	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+11:15:39 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  27860	     32	   4072	  31964	   7cdc	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+11:19:31 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  27856	     32	   4072	  31960	   7cd8	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+11:23:54 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  27860	     32	   4072	  31964	   7cdc	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+11:26:20 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  27856	     32	   4072	  31960	   7cd8	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+11:28:48 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  27856	     32	   4072	  31960	   7cd8	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+11:29:39 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  27860	     32	   4072	  31964	   7cdc	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+11:30:33 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  27860	     32	   4072	  31964	   7cdc	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+11:31:34 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  27860	     32	   4072	  31964	   7cdc	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+11:32:20 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  27856	     32	   4072	  31960	   7cd8	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+11:34:21 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  27856	     32	   4072	  31960	   7cd8	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+11:35:40 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  27856	     32	   4072	  31960	   7cd8	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+11:42:10 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  27856	     32	   4072	  31960	   7cd8	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+11:44:07 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  27872	     32	   4072	  31976	   7ce8	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+11:47:08 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  27872	     32	   4072	  31976	   7ce8	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+11:53:56 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  27872	     32	   4072	  31976	   7ce8	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+11:55:48 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  27872	     32	   4072	  31976	   7ce8	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+11:56:52 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  27876	     32	   4072	  31980	   7cec	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+11:57:54 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  27876	     32	   4072	  31980	   7cec	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+12:01:04 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  27876	     32	   4072	  31980	   7cec	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+12:04:17 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  27876	     32	   4072	  31980	   7cec	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+12:05:29 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  27872	     32	   4072	  31976	   7ce8	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+12:10:58 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  27872	     32	   4072	  31976	   7ce8	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+12:37:25 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  27808	     32	   4072	  31912	   7ca8	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+12:47:09 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  27908	     32	   4072	  32012	   7d0c	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+13:35:55 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  27924	     32	   4072	  32028	   7d1c	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+14:14:12 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'Stepper_Rotate_Cplt_CB':
+../Core/Src/main.c:656:33: error: 'diff_cnt' undeclared (first use in this function)
+  656 |                 Stepper_Rotate((diff_cnt*NUM_OF_STEPS_PER_CYCLE)/NUM_OF_CNT_PER_CYCLE);
+      |                                 ^~~~~~~~
+../Core/Src/main.c:656:33: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
 "make -j12 all" terminated with exit code 2. Build might be incomplete.
-14:56:20 **** Incremental Build of configuration Debug for project Main ****
+14:14:36 **** Incremental Build of configuration Debug for project Main2 ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
  
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
    text	   data	    bss	    dec	    hex	filename
-  26664	     32	   4368	  31064	   7958	Main.elf
+  28100	     32	   4096	  32228	   7de4	Main2.elf
 Finished building: default.size.stdout
  
-Finished building: Main.list
+Finished building: Main2.list
  
-15:06:47 **** Incremental Build of configuration Debug for project Main ****
+14:22:03 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-size  Main2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28100	     32	   4096	  32228	   7de4	Main2.elf
+Finished building: default.size.stdout
+ 
+14:27:26 **** Incremental Build of configuration Debug for project Main2 ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
  
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
    text	   data	    bss	    dec	    hex	filename
-  26672	     32	   4368	  31072	   7960	Main.elf
+  28100	     32	   4088	  32220	   7ddc	Main2.elf
 Finished building: default.size.stdout
  
-Finished building: Main.list
+Finished building: Main2.list
  
-15:20:58 **** Incremental Build of configuration Debug for project Main ****
+14:42:42 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-size  Main2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28100	     32	   4088	  32220	   7ddc	Main2.elf
+Finished building: default.size.stdout
+ 
+14:55:36 **** Incremental Build of configuration Debug for project Main2 ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
  
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
    text	   data	    bss	    dec	    hex	filename
-  26672	     32	   4368	  31072	   7960	Main.elf
+  28132	     32	   4096	  32260	   7e04	Main2.elf
 Finished building: default.size.stdout
  
-Finished building: Main.list
+Finished building: Main2.list
  
-15:21:46 **** Incremental Build of configuration Debug for project Main ****
+15:06:09 **** Incremental Build of configuration Debug for project Main2 ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Main.elf
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
  
-arm-none-eabi-size  Main.elf 
-arm-none-eabi-objdump -h -S Main.elf  > "Main.list"
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
    text	   data	    bss	    dec	    hex	filename
-  26672	     32	   4368	  31072	   7960	Main.elf
+  28132	     32	   4096	  32260	   7e04	Main2.elf
 Finished building: default.size.stdout
  
-Finished building: Main.list
+Finished building: Main2.list
+ 
+15:08:48 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  28132	     32	   4096	  32260	   7e04	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+15:15:32 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  28136	     32	   4096	  32264	   7e08	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
+ 
+15:17:25 **** Incremental Build of configuration Debug for project Main2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Main2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\choua\STM32CubeIDE\AutoBookshelf\Main2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main2.elf
+ 
+arm-none-eabi-size  Main2.elf 
+arm-none-eabi-objdump -h -S Main2.elf  > "Main2.list"
+   text	   data	    bss	    dec	    hex	filename
+  28140	     32	   4096	  32268	   7e0c	Main2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main2.list
  

@@ -1,4 +1,4 @@
-16:29:26 **** Build of configuration Debug for project testEncoder ****
+04:45:21 **** Build of configuration Debug for project testEncoder ****
 make -j12 all 
 arm-none-eabi-size  testEncoder.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size  testEncoder.elf
 Finished building: default.size.stdout
  
 
-16:29:27 Build Finished. 0 errors, 0 warnings. (took 987ms)
+04:45:22 Build Finished. 0 errors, 0 warnings. (took 866ms)
 
