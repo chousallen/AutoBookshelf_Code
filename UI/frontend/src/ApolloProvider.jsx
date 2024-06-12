@@ -2,7 +2,7 @@ import React from "react";
 import { ApolloClient, InMemoryCache, ApolloProvider as Provider } from "@apollo/client";
 
 const client = new ApolloClient({
-    uri: "http://192.168.23.35:4000", // Replace with your GraphQL server URL
+    uri: "http://localhost:4000", // Replace with your GraphQL server URL
     cache: new InMemoryCache(),
 });
 

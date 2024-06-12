@@ -17,12 +17,24 @@ const saveBooks = (newLastId) => {
 };
 
 export const Mutation = {
-    createBook: (_, { title, shelfNo }) => {
+    createBook: async (_, { title, shelfNo }) => {
         const newBook = {
             id: lastId + 1,
             title,
             shelfNo
         };
+        const command = `python ./src/py/main.py --message "#s00${newBook.shelfNo - 1}aaaaaaaaaa"`;
+        try {
+            const { stdout, stderr } = await execPromise(command);
+            if (stderr) {
+                console.error(`Stderr: ${stderr}`);
+                throw new Error(`Error: ${stderr}`);
+            }
+            console.log(`Stdout: ${stdout}`);
+        } catch (error) {
+            console.error(`Error: ${error.message}`);
+            throw new Error(`Error: ${error.message}`);
+        }
         let newLastId = lastId + 1;
         books.push(newBook);
         saveBooks(newLastId);
@@ -34,9 +46,7 @@ export const Mutation = {
         else
         {
             const book = books[bookIndex];
-            //const command = `python ./src/py/main.py --message "${book.shelfNo}"`;
-            const command = `python ./src/py/test_main.py --message "#s00${book.shelfNo - 1}aaaaaaaaaa"`;
-            //console.log(`python ./src/py/main.py --message "${book.shelfNo}"`);
+            const command = `python ./src/py/main.py --message "#s00${book.shelfNo - 1}aaaaaaaaaa"`;
             try {
                 const { stdout, stderr } = await execPromise(command);
                 if (stderr) {
@@ -56,7 +66,7 @@ export const Mutation = {
     kill: async (_, { id }) => {
         const bookIndex = books.findIndex((book) => book.id === parseInt(id));
         //const command = `python ./src/py/main.py --message "${book.shelfNo}"`;
-        const command = `python ./src/py/test_main.py --message "#s009aaaaaaaaaa"`;
+        const command = `python ./src/py/main.py --message "#s009aaaaaaaaaa"`;
         //console.log(`python ./src/py/main.py --message "${book.shelfNo}"`);
         try {
             const { stdout, stderr } = await execPromise(command);
