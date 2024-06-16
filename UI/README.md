@@ -34,7 +34,12 @@ then go to http://localhost:4000/
 │  ├──ApolloProvider.jsx
 │  ├──App.css
 │  ├──App.jsx
-│  └──main.jsx
+│  ├──main.jsx
+│  └──view
+│     ├──Lobby.jsx
+│     ├──Instruction.jsx
+│     ├──Author.jsx
+│     └──Easter.jsx
 └──index.html
 ```
 
